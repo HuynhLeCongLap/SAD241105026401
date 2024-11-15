@@ -62,7 +62,9 @@ Ca sử dụng "Select Payment" là quá trình mà nhân viên hoặc người 
 User Interface (UI): Giao diện cho phép người dùng chọn phương thức thanh toán.
 Payment Processor: Xử lý các lựa chọn thanh toán và thực hiện các hành động liên quan đến thanh toán.
 Database: Lưu trữ thông tin thanh toán cho nhân viên.
-Biểu đồ Sequence cho "Select Payment":
+
+
+-Biểu đồ Sequence cho "Select Payment":
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/P9112eCm44NtEKLmPHUzW8iYuhOGA3t0D4une4d8Z0NFraMFr2iqMWMZs_alVzxa-_wKn11uw3i1cbsGTy8WV1mPRJnObfc2iKVBAZYDH2va4aWgbK8rC3o0S0xhIeYfHvul4PI59EnGyr9qHMvTavz4Z29GLn5u8kisoIa2CLeR0l8Gx87uLyox2jaOyXsC1oXrqSu-JUXliv9nDlTRFh4YU64glMCtWcjjVBBtMgBz-INQPlht7m000F__0m00)
 
