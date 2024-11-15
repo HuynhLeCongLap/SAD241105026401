@@ -16,7 +16,7 @@ Biểu đồ Package mô tả kiến trúc:
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/T94x3eCm44Hxds95pnKYb4yHYO8YgIAAZTaW56EZjIbGb9Ebo95oXO0YXOzDEtupdj5-Nk_4EcJNraeqAEzO4aGPaoNjq5L6GueTSGGF0N0vMs8uQaTyGqcvU8hHj6rjfSbQI4rPoPajmwxkyp8siWSCvuDugcgIoCLSxL4sIkrGoLQX6zJf9tjqE8i-r8qo7T7mS4LBqv1HwoEMtI6EDw5cOIvGrlV-8vSB0lPrrjT-hBzq5VNs9wIBuS9V0000__y30000)
 
-Giải thích Biểu đồ Package:
+-Giải thích Biểu đồ Package:
 Presentation Layer (Lớp giao diện người dùng):
 
 User Interface: Đây là nơi người dùng tương tác với hệ thống. Các tác vụ của người dùng sẽ được gửi đến các lớp trong lớp nghiệp vụ để xử lý.
@@ -66,7 +66,7 @@ Biểu đồ Sequence cho "Select Payment":
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/P9112eCm44NtEKLmPHUzW8iYuhOGA3t0D4une4d8Z0NFraMFr2iqMWMZs_alVzxa-_wKn11uw3i1cbsGTy8WV1mPRJnObfc2iKVBAZYDH2va4aWgbK8rC3o0S0xhIeYfHvul4PI59EnGyr9qHMvTavz4Z29GLn5u8kisoIa2CLeR0l8Gx87uLyox2jaOyXsC1oXrqSu-JUXliv9nDlTRFh4YU64glMCtWcjjVBBtMgBz-INQPlht7m000F__0m00)
 
-Giải thích các bước trong biểu đồ Sequence:
+-Giải thích các bước trong biểu đồ Sequence:
 User -> PaymentProcessor (selectPaymentMethod): Người dùng chọn phương thức thanh toán từ giao diện người dùng.
 
 PaymentProcessor -> Database (fetchPaymentMethods): Hệ thống yêu cầu lấy các phương thức thanh toán có sẵn từ cơ sở dữ liệu.
@@ -83,7 +83,7 @@ Database -> PaymentProcessor (confirmSave): Cơ sở dữ liệu xác nhận r�
 
 PaymentProcessor -> User (confirmPaymentMethod): Hệ thống thông báo cho người dùng rằng phương thức thanh toán đã được chọn thành công.
 
-Giải thích các đối tượng và vai trò trong biểu đồ:
+-Giải thích các đối tượng và vai trò trong biểu đồ:
 User: Là người sử dụng hệ thống (có thể là nhân viên hoặc người quản lý), người thực hiện hành động chọn và xác nhận phương thức thanh toán.
 PaymentProcessor: Đây là đối tượng xử lý việc chọn lựa và xác nhận phương thức thanh toán. Nó chịu trách nhiệm giao tiếp với cơ sở dữ liệu và xử lý các nghiệp vụ liên quan đến thanh toán.
 Database: Cơ sở dữ liệu lưu trữ các phương thức thanh toán và lưu lựa chọn của người dùng.
@@ -97,11 +97,11 @@ Timecard Processor: Xử lý và xác nhận thông tin thời gian, tính toán
 Database: Lưu trữ thông tin thời gian làm việc của nhân viên.
 
 
-Biểu đồ Sequence cho "Maintain Timecard":
+-Biểu đồ Sequence cho "Maintain Timecard":
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/R8z12i9034NtSuhGLLru0HTIIjqNh0U8Cn46sfcIIGkUpOL7yWfc2YCARhB8U_dyl1xF9WcoBDDeq4fak2HYC-lAMpzZ4AW6Fv55TZr7Iob5hW0J3FslrQ7W5HDji6kDoK6mFwe81w0Wn3ce5Xsd87pV6IM5hpXwXqB_bQvL9U5AfSgteh2as1XkdgUpcdMvtMfyK0d8YbEdeU3oxsy0003__mC0)
 
-Giải thích các bước trong biểu đồ Sequence:
+-Giải thích các bước trong biểu đồ Sequence:
 User -> TimecardProcessor (enterTime): Người dùng (có thể là nhân viên hoặc người quản lý) nhập thông tin về thời gian làm việc (ví dụ: giờ vào, giờ ra, giờ làm thêm) vào hệ thống.
 
 TimecardProcessor -> TimecardProcessor (validateTime): Hệ thống kiểm tra tính hợp lệ của thông tin thời gian đã nhập, ví dụ: xem thời gian có hợp lệ hay không, thời gian vào phải nhỏ hơn thời gian ra, v.v.
@@ -112,7 +112,7 @@ Database -> TimecardProcessor (confirmSave): Cơ sở dữ liệu xác nhận r�
 
 TimecardProcessor -> User (confirmTimecardSaved): Hệ thống thông báo lại cho người dùng rằng thông tin thời gian công đã được lưu thành công.
 
-Giải thích các đối tượng và vai trò trong biểu đồ:
+-Giải thích các đối tượng và vai trò trong biểu đồ:
 User: Người sử dụng hệ thống, có thể là nhân viên hoặc người quản lý, người nhập dữ liệu thời gian làm việc vào hệ thống.
 TimecardProcessor: Lớp xử lý việc nhập và xác thực thông tin thời gian làm việc, đồng thời tương tác với cơ sở dữ liệu để lưu trữ các bản ghi thời gian công.
 Database: Cơ sở dữ liệu lưu trữ các thông tin về thời gian làm việc của nhân viên.
