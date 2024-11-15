@@ -47,7 +47,7 @@ Payment Processor: Xử lý các lựa chọn thanh toán và thực hiện các
 Database: Lưu trữ thông tin thanh toán cho nhân viên.
 Biểu đồ Sequence cho "Select Payment":
 
-![Diagram](https://www.planttext.com/api/plantuml/png/Uhzxlu8kDg30LQEWe11Gb5gScbUIM9APdwVWarYPMgHG0vBG22q6CZtpIbABqXAJKpM1Ie4Ik4nIW8CQ97OPJlKr2awbnPbvgSN52ZxvwPd9o3OhQ0GKvIS3fJBpqZKHfbBDPY1mIIn9X5e9rmos6IIHb5YSgebiAWwJ00000F__0m00)
+![Diagram](https://www.planttext.com/api/plantuml/png/P9112eCm44NtEKLmPHUzW8iYuhOGA3t0D4une4d8Z0NFraMFr2iqMWMZs_alVzxa-_wKn11uw3i1cbsGTy8WV1mPRJnObfc2iKVBAZYDH2va4aWgbK8rC3o0S0xhIeYfHvul4PI59EnGyr9qHMvTavz4Z29GLn5u8kisoIa2CLeR0l8Gx87uLyox2jaOyXsC1oXrqSu-JUXliv9nDlTRFh4YU64glMCtWcjjVBBtMgBz-INQPlht7m000F__0m00)
 
 Giải thích các lớp phân tích:
 
