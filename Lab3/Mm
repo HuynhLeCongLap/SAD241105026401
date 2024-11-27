@@ -1,5 +1,4 @@
 *Để vẽ biểu đồ ngữ cảnh cho hệ thống con PrintService, chúng ta cần xác định các yếu tố chính liên quan đến hệ thống này và cách nó tương tác với các hệ thống khác trong một hệ thống quản lý tiền lương (Payroll System).
-
 -PrintService trong hệ thống quản lý tiền lương sẽ có vai trò chính là in các tài liệu liên quan, chẳng hạn như phiếu lương (payslips), báo cáo lương, hoặc các tài liệu khác liên quan đến nhân viên và thanh toán.
 
 -Các hệ thống và tác nhân liên quan đến PrintService:
@@ -28,4 +27,21 @@
 +Employee: Nhân viên có thể cập nhật thời gian làm việc của họ trong các dự án.
 -Biểu đồ ngữ cảnh ProjectManagementDatabase:
 
-[Check out another project]
+[Check out another project](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/ProjectManagementDatabase%20subsystems.png)
+
+-Giải thích biểu đồ ngữ cảnh:
++ProjectManagementSystem: ProjectManagementDatabase nhận và lưu trữ thông tin về các dự án từ ProjectManagementSystem, bao gồm các thông tin như tên dự án, mô tả, ngân sách và tiến độ.
++EmployeeDatabase: ProjectManagementDatabase liên kết với EmployeeDatabase để lưu trữ thông tin về nhân viên tham gia vào các dự án, bao gồm tên nhân viên và vai trò của họ trong dự án.
++PayrollSystem: ProjectManagementDatabase cung cấp dữ liệu về thời gian làm việc của nhân viên trên các dự án cho PayrollSystem, giúp tính toán tiền lương dựa trên số giờ làm việc trong dự án.
++ProjectManager: Người quản lý dự án có thể truy xuất các thông tin chi tiết về dự án, tiến độ và các nhân viên tham gia vào dự án từ ProjectManagementDatabase để kiểm tra và quản lý tiến độ công việc.
++Employee: Nhân viên có thể truy cập vào ProjectManagementDatabase để ghi nhận số giờ làm việc của họ trên từng dự án, từ đó ảnh hưởng đến tính toán lương.
+
+-BankSystem:
++Chức năng: Xử lý thanh toán lương cho nhân viên qua ngân hàng.
++Interface: Tiếp nhận thông tin thanh toán, xử lý giao dịch và cung cấp báo cáo.
+-PrintService:
++Chức năng: In phiếu lương và các tài liệu liên quan đến lương.
++Interface: Nhận yêu cầu in, in phiếu lương và quản lý hàng đợi in.
+-ProjectManagementDatabase:
++Chức năng: Lưu trữ và quản lý thông tin dự án, thời gian làm việc của nhân viên và liên kết với hệ thống quản lý lương.
++Interface: Lưu trữ dữ liệu dự án, ghi nhận giờ làm việc của nhân viên và cung cấp dữ liệu cho hệ thống lương.
