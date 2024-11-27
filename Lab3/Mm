@@ -45,3 +45,16 @@
 -ProjectManagementDatabase:
 +Chức năng: Lưu trữ và quản lý thông tin dự án, thời gian làm việc của nhân viên và liên kết với hệ thống quản lý lương.
 +Interface: Lưu trữ dữ liệu dự án, ghi nhận giờ làm việc của nhân viên và cung cấp dữ liệu cho hệ thống lương.
+2.Analysis class to design element map
+-Hãy ánh xạ các lớp phân tích đến các phần tử thiết kế.
+
+[Check out another project](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/a.png)
+-Các bước ánh xạ từ phân tích sang thiết kế:
++Định nghĩa các lớp phân tích: Các lớp phân tích mô tả các thực thể trong hệ thống.
++Chuyển đổi thành các lớp thiết kế: Mỗi lớp phân tích có thể được chuyển thành lớp thiết kế có thể thực thi, bao gồm các thuộc tính, phương thức và chức năng chi tiết.
++Xác định các thành phần (Components): Các lớp thiết kế có thể được nhóm lại thành các thành phần, chẳng hạn như Payroll Calculation Service hay Banking Integration Service.
++Mô tả giao diện (Interfaces): Các lớp thiết kế cần tương tác với nhau qua các giao diện để đảm bảo tính độc lập và dễ bảo trì.
+3.Design element to owning package map
+-Hãy ánh xạ các phần tử thiết kế vào các 
+[Check out another project]((https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/b.png)
+
