@@ -57,4 +57,10 @@
 3.Design element to owning package map
 -Hãy ánh xạ các phần tử thiết kế vào các 
 [Check out another project]((https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/b.png)
+-Giải thích mô hình gói:
++Gói EmployeeManagement chứa các lớp liên quan đến quản lý nhân viên và tính toán lương.
++Gói PaymentProcessing chứa các lớp xử lý các giao dịch thanh toán, bao gồm việc chuyển tiền vào tài khoản nhân viên và tương tác với ngân hàng.
++Gói ProjectManagement chứa các lớp và thành phần quản lý dự án và theo dõi các chi phí liên quan đến dự án.
++Gói PrintService chứa các lớp liên quan đến việc in ấn các tài liệu, phiếu lương và báo cáo.
++Gói Reporting chứa các lớp tạo báo cáo tổng hợp và các báo cáo chi tiết từ các thành phần khác trong hệ thống.
 
