@@ -1,1 +1,31 @@
-![PrintService](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/PrintService.png)
+*Để vẽ biểu đồ ngữ cảnh cho hệ thống con PrintService, chúng ta cần xác định các yếu tố chính liên quan đến hệ thống này và cách nó tương tác với các hệ thống khác trong một hệ thống quản lý tiền lương (Payroll System).
+
+-PrintService trong hệ thống quản lý tiền lương sẽ có vai trò chính là in các tài liệu liên quan, chẳng hạn như phiếu lương (payslips), báo cáo lương, hoặc các tài liệu khác liên quan đến nhân viên và thanh toán.
+
+-Các hệ thống và tác nhân liên quan đến PrintService:
++Payroll System: Cung cấp thông tin về phiếu lương và các báo cáo liên quan đến lương nhân viên.
++Employee Database: Cung cấp thông tin chi tiết của nhân viên như tên, chức vụ, số tiền lương.
++PrintQueue: Hệ thống quản lý các công việc in ấn, lưu trữ các yêu cầu in.
++Printer: Thiết bị vật lý chịu trách nhiệm in các phiếu lương hoặc báo cáo.
++Administrator: Quản lý các tác vụ in ấn, kiểm tra trạng thái in.
+-Biểu đồ ngữ cảnh PrintService:
+
+[Check out another project](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/PrintService.png)
+
+-Giải thích biểu đồ ngữ cảnh:
++PayrollSystem: PrintService nhận dữ liệu từ PayrollSystem, bao gồm thông tin về phiếu lương của nhân viên, để in.
++EmployeeDatabase: PrintService có thể truy cập thông tin nhân viên từ EmployeeDatabase để hoàn thiện các phiếu lương (ví dụ: tên, chức danh, số tiền lương, v.v.).
++PrintQueue: Các công việc in ấn sẽ được gửi vào hàng đợi in PrintQueue trước khi được thực hiện.
++Printer: PrintService gửi các yêu cầu in tới thiết bị Printer để in phiếu lương hoặc báo cáo.
++Administrator: Người quản lý (Administrator) sẽ giám sát và quản lý các tác vụ in ấn, kiểm tra trạng thái và xử lý các sự cố in nếu cần.
+
+-Để vẽ biểu đồ ngữ cảnh cho hệ thống con ProjectManagementDatabase, chúng ta cần xác định các thành phần chính và các tác nhân tương tác với hệ thống con này. ProjectManagementDatabase trong một hệ thống quản lý tiền lương (Payroll System) có thể lưu trữ các thông tin liên quan đến các dự án, nhân viên tham gia vào các dự án, và các thông tin về chi phí, thời gian làm việc của nhân viên cho mỗi dự án.
+-Các hệ thống và tác nhân liên quan đến ProjectManagementDatabase:
++Project Management System (PMS): Cung cấp và truy xuất thông tin về các dự án và các hoạt động liên quan đến các dự án.
++Employee Database: Lưu trữ thông tin nhân viên, bao gồm các thông tin chi tiết về người tham gia dự án.
++Payroll System: Liên kết với ProjectManagementDatabase để tính toán và thanh toán lương cho nhân viên dựa trên thời gian họ làm việc trong các dự án.
++Project Manager: Người quản lý dự án có thể truy xuất, cập nhật thông tin về tiến độ, chi phí và nhân viên tham gia dự án.
++Employee: Nhân viên có thể cập nhật thời gian làm việc của họ trong các dự án.
+-Biểu đồ ngữ cảnh ProjectManagementDatabase:
+
+[Check out another project]
