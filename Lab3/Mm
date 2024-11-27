@@ -81,4 +81,22 @@
 -Biểu đồ mô tả các lớp và quan hệ giữa chúng
 -Dưới đây là biểu đồ PlantUML mô tả các lớp và mối quan hệ giữa chúng:
 [Check out another project](((https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/c.png)
+-Giải thích biểu đồ:
++Lớp Presentation Layer chứa User Interface (UI), tương tác trực tiếp với người dùng để yêu cầu thông tin (ví dụ, yêu cầu tính toán lương hoặc thanh toán).
++Lớp Business Logic Layer bao gồm các thành phần như Payroll Processing, Payment Processing, và Project Management. Các thành phần này thực hiện các chức năng chính của hệ thống, như tính toán lương, xử lý thanh toán và quản lý dự án.
++Lớp Data Access Layer có các lớp như Employee Data Access, Payroll Data Access, và Transaction Data Access, tương tác với cơ sở dữ liệu để thực hiện các thao tác CRUD trên các bảng dữ liệu.
++Lớp Integration Layer chứa các thành phần như Bank Integration và Print Service Integration, thực hiện các tác vụ liên quan đến tích hợp với hệ thống ngân hàng hoặc dịch vụ in ấn bên ngoài.
++Lớp Database Layer là nơi lưu trữ dữ liệu của hệ thống, bao gồm Employee Database, Payroll Database, và Transaction Database.
+-Các quan hệ giữa các lớp:
++UI (giao diện người dùng) yêu cầu thông tin từ Payroll và Payment trong Business Logic Layer.
++Payroll và Payment đọc và ghi dữ liệu từ Data Access Layer (ví dụ, từ PayrollData và TransactionData).
++Payroll và Payment tích hợp với BankIntegration để xử lý giao dịch ngân hàng.
++PrintService gửi yêu cầu in ấn từ PayrollData.
+-Các lớp trong Data Access Layer thực hiện các thao tác CRUD trên cơ sở dữ liệu như EmployeeDB, PayrollDB, và TransactionDB.
+-Mô tả các lớp và quan hệ:
++Presentation Layer tương tác với Business Logic Layer.
++Business Logic Layer xử lý nghiệp vụ và truy cập dữ liệu qua Data Access Layer.
++Business Logic Layer có thể tích hợp với các hệ thống bên ngoài qua Integration Layer.
++Data Access Layer tương tác trực tiếp với cơ sở dữ liệu trong Database Layer.
+*Biểu đồ này giúp bạn hình dung các lớp trong kiến trúc của hệ thống và mối quan hệ giữa chúng, giúp cho việc thiết kế và triển khai hệ thống trở nên rõ ràng hơn.
 
