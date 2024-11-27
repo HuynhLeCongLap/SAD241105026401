@@ -49,6 +49,7 @@
 -Hãy ánh xạ các lớp phân tích đến các phần tử thiết kế.
 
 [Check out another project](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/a.png)
+
 -Các bước ánh xạ từ phân tích sang thiết kế:
 +Định nghĩa các lớp phân tích: Các lớp phân tích mô tả các thực thể trong hệ thống.
 +Chuyển đổi thành các lớp thiết kế: Mỗi lớp phân tích có thể được chuyển thành lớp thiết kế có thể thực thi, bao gồm các thuộc tính, phương thức và chức năng chi tiết.
@@ -56,7 +57,9 @@
 +Mô tả giao diện (Interfaces): Các lớp thiết kế cần tương tác với nhau qua các giao diện để đảm bảo tính độc lập và dễ bảo trì.
 3.Design element to owning package map
 -Hãy ánh xạ các phần tử thiết kế vào các 
+
 [Check out another project]((https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/b.png)
+
 -Giải thích mô hình gói:
 +Gói EmployeeManagement chứa các lớp liên quan đến quản lý nhân viên và tính toán lương.
 +Gói PaymentProcessing chứa các lớp xử lý các giao dịch thanh toán, bao gồm việc chuyển tiền vào tài khoản nhân viên và tương tác với ngân hàng.
@@ -80,7 +83,9 @@
 +Data Access Layer giao tiếp với Database Layer để thực hiện các thao tác CRUD (Create, Read, Update, Delete) trên cơ sở dữ liệu.
 -Biểu đồ mô tả các lớp và quan hệ giữa chúng
 -Dưới đây là biểu đồ PlantUML mô tả các lớp và mối quan hệ giữa chúng:
+
 [Check out another project](((https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/c.png)
+
 -Giải thích biểu đồ:
 +Lớp Presentation Layer chứa User Interface (UI), tương tác trực tiếp với người dùng để yêu cầu thông tin (ví dụ, yêu cầu tính toán lương hoặc thanh toán).
 +Lớp Business Logic Layer bao gồm các thành phần như Payroll Processing, Payment Processing, và Project Management. Các thành phần này thực hiện các chức năng chính của hệ thống, như tính toán lương, xử lý thanh toán và quản lý dự án.
