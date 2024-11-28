@@ -1,0 +1,106 @@
+*Để vẽ biểu đồ ngữ cảnh cho hệ thống con PrintService, chúng ta cần xác định các yếu tố chính liên quan đến hệ thống này và cách nó tương tác với các hệ thống khác trong một hệ thống quản lý tiền lương (Payroll System).
+-PrintService trong hệ thống quản lý tiền lương sẽ có vai trò chính là in các tài liệu liên quan, chẳng hạn như phiếu lương (payslips), báo cáo lương, hoặc các tài liệu khác liên quan đến nhân viên và thanh toán.
+
+-Các hệ thống và tác nhân liên quan đến PrintService:
++Payroll System: Cung cấp thông tin về phiếu lương và các báo cáo liên quan đến lương nhân viên.
++Employee Database: Cung cấp thông tin chi tiết của nhân viên như tên, chức vụ, số tiền lương.
++PrintQueue: Hệ thống quản lý các công việc in ấn, lưu trữ các yêu cầu in.
++Printer: Thiết bị vật lý chịu trách nhiệm in các phiếu lương hoặc báo cáo.
++Administrator: Quản lý các tác vụ in ấn, kiểm tra trạng thái in.
+-Biểu đồ ngữ cảnh PrintService:
+
+[Check out another project](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/PrintService.png)
+
+-Giải thích biểu đồ ngữ cảnh:
++PayrollSystem: PrintService nhận dữ liệu từ PayrollSystem, bao gồm thông tin về phiếu lương của nhân viên, để in.
++EmployeeDatabase: PrintService có thể truy cập thông tin nhân viên từ EmployeeDatabase để hoàn thiện các phiếu lương (ví dụ: tên, chức danh, số tiền lương, v.v.).
++PrintQueue: Các công việc in ấn sẽ được gửi vào hàng đợi in PrintQueue trước khi được thực hiện.
++Printer: PrintService gửi các yêu cầu in tới thiết bị Printer để in phiếu lương hoặc báo cáo.
++Administrator: Người quản lý (Administrator) sẽ giám sát và quản lý các tác vụ in ấn, kiểm tra trạng thái và xử lý các sự cố in nếu cần.
+
+-Để vẽ biểu đồ ngữ cảnh cho hệ thống con ProjectManagementDatabase, chúng ta cần xác định các thành phần chính và các tác nhân tương tác với hệ thống con này. ProjectManagementDatabase trong một hệ thống quản lý tiền lương (Payroll System) có thể lưu trữ các thông tin liên quan đến các dự án, nhân viên tham gia vào các dự án, và các thông tin về chi phí, thời gian làm việc của nhân viên cho mỗi dự án.
+-Các hệ thống và tác nhân liên quan đến ProjectManagementDatabase:
++Project Management System (PMS): Cung cấp và truy xuất thông tin về các dự án và các hoạt động liên quan đến các dự án.
++Employee Database: Lưu trữ thông tin nhân viên, bao gồm các thông tin chi tiết về người tham gia dự án.
++Payroll System: Liên kết với ProjectManagementDatabase để tính toán và thanh toán lương cho nhân viên dựa trên thời gian họ làm việc trong các dự án.
++Project Manager: Người quản lý dự án có thể truy xuất, cập nhật thông tin về tiến độ, chi phí và nhân viên tham gia dự án.
++Employee: Nhân viên có thể cập nhật thời gian làm việc của họ trong các dự án.
+-Biểu đồ ngữ cảnh ProjectManagementDatabase:
+
+[Check out another project](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/ProjectManagementDatabase%20subsystems.png)
+
+-Giải thích biểu đồ ngữ cảnh:
++ProjectManagementSystem: ProjectManagementDatabase nhận và lưu trữ thông tin về các dự án từ ProjectManagementSystem, bao gồm các thông tin như tên dự án, mô tả, ngân sách và tiến độ.
++EmployeeDatabase: ProjectManagementDatabase liên kết với EmployeeDatabase để lưu trữ thông tin về nhân viên tham gia vào các dự án, bao gồm tên nhân viên và vai trò của họ trong dự án.
++PayrollSystem: ProjectManagementDatabase cung cấp dữ liệu về thời gian làm việc của nhân viên trên các dự án cho PayrollSystem, giúp tính toán tiền lương dựa trên số giờ làm việc trong dự án.
++ProjectManager: Người quản lý dự án có thể truy xuất các thông tin chi tiết về dự án, tiến độ và các nhân viên tham gia vào dự án từ ProjectManagementDatabase để kiểm tra và quản lý tiến độ công việc.
++Employee: Nhân viên có thể truy cập vào ProjectManagementDatabase để ghi nhận số giờ làm việc của họ trên từng dự án, từ đó ảnh hưởng đến tính toán lương.
+
+-BankSystem:
++Chức năng: Xử lý thanh toán lương cho nhân viên qua ngân hàng.
++Interface: Tiếp nhận thông tin thanh toán, xử lý giao dịch và cung cấp báo cáo.
+-PrintService:
++Chức năng: In phiếu lương và các tài liệu liên quan đến lương.
++Interface: Nhận yêu cầu in, in phiếu lương và quản lý hàng đợi in.
+-ProjectManagementDatabase:
++Chức năng: Lưu trữ và quản lý thông tin dự án, thời gian làm việc của nhân viên và liên kết với hệ thống quản lý lương.
++Interface: Lưu trữ dữ liệu dự án, ghi nhận giờ làm việc của nhân viên và cung cấp dữ liệu cho hệ thống lương.
+2.Analysis class to design element map
+-Hãy ánh xạ các lớp phân tích đến các phần tử thiết kế.
+
+[Check out another project](https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/a.png)
+
+-Các bước ánh xạ từ phân tích sang thiết kế:
++Định nghĩa các lớp phân tích: Các lớp phân tích mô tả các thực thể trong hệ thống.
++Chuyển đổi thành các lớp thiết kế: Mỗi lớp phân tích có thể được chuyển thành lớp thiết kế có thể thực thi, bao gồm các thuộc tính, phương thức và chức năng chi tiết.
++Xác định các thành phần (Components): Các lớp thiết kế có thể được nhóm lại thành các thành phần, chẳng hạn như Payroll Calculation Service hay Banking Integration Service.
++Mô tả giao diện (Interfaces): Các lớp thiết kế cần tương tác với nhau qua các giao diện để đảm bảo tính độc lập và dễ bảo trì.
+3.Design element to owning package map
+-Hãy ánh xạ các phần tử thiết kế vào các 
+
+[Check out another project]((https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/b.png)
+
+-Giải thích mô hình gói:
++Gói EmployeeManagement chứa các lớp liên quan đến quản lý nhân viên và tính toán lương.
++Gói PaymentProcessing chứa các lớp xử lý các giao dịch thanh toán, bao gồm việc chuyển tiền vào tài khoản nhân viên và tương tác với ngân hàng.
++Gói ProjectManagement chứa các lớp và thành phần quản lý dự án và theo dõi các chi phí liên quan đến dự án.
++Gói PrintService chứa các lớp liên quan đến việc in ấn các tài liệu, phiếu lương và báo cáo.
++Gói Reporting chứa các lớp tạo báo cáo tổng hợp và các báo cáo chi tiết từ các thành phần khác trong hệ thống.
+4.Architectural layers and their dependencies
+
+-Để vẽ biểu đồ mô tả các architectural layers (các lớp kiến trúc) trong hệ thống và quan hệ giữa chúng, trước tiên ta cần hiểu rõ về cách các lớp trong hệ thống phần mềm được phân chia để quản lý và tương tác với nhau. Một hệ thống phần mềm thường được chia thành các lớp kiến trúc như sau:
+
+-Các lớp kiến trúc (Architectural Layers):
++Presentation Layer (Lớp giao diện người dùng): Đây là lớp mà người dùng tương tác trực tiếp. Nó xử lý việc hiển thị thông tin và nhận đầu vào từ người dùng.
++Business Logic Layer (Lớp logic nghiệp vụ): Lớp này xử lý các quy tắc và logic nghiệp vụ của hệ thống, như tính toán lương, xử lý thanh toán, quản lý dự án.
++Data Access Layer (Lớp truy cập dữ liệu): Lớp này chịu trách nhiệm tương tác với cơ sở dữ liệu, đọc và ghi dữ liệu từ các bảng cơ sở dữ liệu.
++Integration Layer (Lớp tích hợp): Đây là lớp xử lý các tương tác với các hệ thống bên ngoài, chẳng hạn như tích hợp với ngân hàng, hệ thống in ấn, hoặc các API của bên thứ ba.
++Database Layer (Lớp cơ sở dữ liệu): Đây là nơi lưu trữ dữ liệu của hệ thống, bao gồm các bảng, chỉ mục, và các quan hệ giữa các đối tượng trong cơ sở dữ liệu.
+-Quan hệ giữa các lớp (Dependencies):
++Presentation Layer giao tiếp trực tiếp với Business Logic Layer để thực hiện các yêu cầu từ người dùng (ví dụ, tính toán lương, tạo phiếu lương).
++Business Logic Layer có thể gọi đến Data Access Layer để lấy dữ liệu cần thiết từ cơ sở dữ liệu.
++Business Logic Layer cũng có thể tương tác với Integration Layer để gửi thanh toán qua ngân hàng, hoặc gửi yêu cầu in ấn.
++Data Access Layer giao tiếp với Database Layer để thực hiện các thao tác CRUD (Create, Read, Update, Delete) trên cơ sở dữ liệu.
+-Biểu đồ mô tả các lớp và quan hệ giữa chúng
+-Dưới đây là biểu đồ PlantUML mô tả các lớp và mối quan hệ giữa chúng:
+
+[Check out another project](((https://github.com/HuynhLeCongLap/SAD241105026401/blob/main/Lab3/c.png)
+
+-Giải thích biểu đồ:
++Lớp Presentation Layer chứa User Interface (UI), tương tác trực tiếp với người dùng để yêu cầu thông tin (ví dụ, yêu cầu tính toán lương hoặc thanh toán).
++Lớp Business Logic Layer bao gồm các thành phần như Payroll Processing, Payment Processing, và Project Management. Các thành phần này thực hiện các chức năng chính của hệ thống, như tính toán lương, xử lý thanh toán và quản lý dự án.
++Lớp Data Access Layer có các lớp như Employee Data Access, Payroll Data Access, và Transaction Data Access, tương tác với cơ sở dữ liệu để thực hiện các thao tác CRUD trên các bảng dữ liệu.
++Lớp Integration Layer chứa các thành phần như Bank Integration và Print Service Integration, thực hiện các tác vụ liên quan đến tích hợp với hệ thống ngân hàng hoặc dịch vụ in ấn bên ngoài.
++Lớp Database Layer là nơi lưu trữ dữ liệu của hệ thống, bao gồm Employee Database, Payroll Database, và Transaction Database.
+-Các quan hệ giữa các lớp:
++UI (giao diện người dùng) yêu cầu thông tin từ Payroll và Payment trong Business Logic Layer.
++Payroll và Payment đọc và ghi dữ liệu từ Data Access Layer (ví dụ, từ PayrollData và TransactionData).
++Payroll và Payment tích hợp với BankIntegration để xử lý giao dịch ngân hàng.
++PrintService gửi yêu cầu in ấn từ PayrollData.
+-Các lớp trong Data Access Layer thực hiện các thao tác CRUD trên cơ sở dữ liệu như EmployeeDB, PayrollDB, và TransactionDB.
+-Mô tả các lớp và quan hệ:
++Presentation Layer tương tác với Business Logic Layer.
++Business Logic Layer xử lý nghiệp vụ và truy cập dữ liệu qua Data Access Layer.
++Business Logic Layer có thể tích hợp với các hệ thống bên ngoài qua Integration Layer.
++Data Access Layer tương tác trực tiếp với cơ sở dữ liệu trong Database Layer.
+*Biểu đồ này giúp bạn hình dung các lớp trong kiến trúc của hệ thống và mối quan hệ giữa chúng, giúp cho việc thiết kế và triển khai hệ thống trở nên rõ ràng hơn.
