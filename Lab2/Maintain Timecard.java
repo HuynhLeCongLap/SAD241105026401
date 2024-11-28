@@ -126,4 +126,11 @@ public class TimecardSystemDemo {
             String newStartTime = scanner.nextLine();
             System.out.print("Enter new end time (hh:mm): ");
             String newEndTime = scanner.nextLine();
-            timecardSystem.editTimecard(employee1, date, newStartTime, newEnd
+            timecardSystem.editTimecard(employee1, date, newStartTime, newEndTime);
+        } else {
+            System.out.println("Invalid option.");
+        }
+
+        scanner.close();
+    }
+}
