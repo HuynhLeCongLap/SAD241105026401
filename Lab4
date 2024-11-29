@@ -1,0 +1,29 @@
+1. Mô tả Ca sử dụng
+**Tên ca sử dụng: User đăng nhập (User Login)
+-Mô tả:
++Ca sử dụng này mô tả hành động của người dùng khi họ muốn truy cập vào hệ thống Payroll. Người dùng nhập thông tin tài khoản (tên đăng nhập và mật khẩu) vào form đăng nhập, sau đó hệ thống xác thực và trả về kết quả (cho phép truy cập nếu đúng, hoặc thông báo lỗi nếu sai).
+2. Actors (Người tham gia)
++User (Người dùng): Là người tham gia chính trong ca sử dụng này. Người dùng có thể là nhân viên, quản lý hoặc quản trị viên, tùy vào quyền truy cập của họ trong hệ thống Payroll.
+
++Hệ thống Payroll: Hệ thống chịu trách nhiệm xử lý và xác thực thông tin đăng nhập của người dùng.
+
+3. Các bước thực hiện
+-Bước 1: Mở trang đăng nhập
++User mở trình duyệt hoặc ứng dụng và truy cập vào trang đăng nhập của hệ thống Payroll.
+-Bước 2: Nhập thông tin đăng nhập
++User nhập tên đăng nhập (username) và mật khẩu (password) vào các ô tương ứng trên form đăng nhập.
+-Bước 3: Gửi thông tin đăng nhập
++User nhấn nút "Đăng nhập" để gửi thông tin đăng nhập đến hệ thống Payroll.
+-Bước 4: Hệ thống kiểm tra thông tin
++Hệ thống Payroll sẽ kiểm tra tính hợp lệ của thông tin đăng nhập:
++Kiểm tra xem tên đăng nhập có tồn tại trong cơ sở dữ liệu không.
++Kiểm tra xem mật khẩu có khớp với mật khẩu lưu trữ trong hệ thống không.
+-Bước 5: Xử lý kết quả đăng nhập
++Nếu thông tin đăng nhập chính xác:
++Hệ thống Payroll cho phép người dùng truy cập vào hệ thống và chuyển hướng đến trang chủ hoặc trang dashboard tương ứng.
++Nếu thông tin đăng nhập sai:
++Hệ thống Payroll thông báo lỗi (ví dụ: "Tên đăng nhập hoặc mật khẩu không đúng") và yêu cầu người dùng thử lại.
++Nếu người dùng nhập sai quá nhiều lần, hệ thống có thể khóa tài khoản tạm thời hoặc yêu cầu xác thực thêm (như mã OTP qua email hoặc SMS).
+-Bước 6: Kết thúc
++User tiếp tục sử dụng hệ thống nếu đăng nhập thành công.
++Nếu đăng nhập thất bại, User có thể thử lại hoặc sử dụng chức năng "Quên mật khẩu" để lấy lại mật khẩu.
