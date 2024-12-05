@@ -97,6 +97,7 @@ Các bước thực hiện "Duy trì mã charge code":
 ![Diagram](https://www.planttext.com/api/plantuml/png/f9I_IiD07CVtFCMFxhw042aMj62LscRGyKX3Bz1SGd8HCpiuE7KKbzOEGY6ekEKGXok-nps1h-3TrTX8axJ5zVBxVdxVtxzyiOzcH558Osza89lw8JGE1Rk7BXPPIi3Y4nTQcAS4Dm15SEGIH6odBFGCyqS2VS5UTMIxbmUTnoAR4UZmT_tX514qT4B38TIb2JJQWjs2XGKRao6iOcLMLw9vgaKjFw9BeITr_IIYZcSOfWaNV6h3OYpO7S6Gy7aCjiYUOg0Yc_hWyHdO68L31sn_u81f6kqUx1taTS0-70kMkfkLdc0Fhf7B9A7CaSHTRW1fqrPr2cMn55sTiePMYLhLRuMoup2I3BU2eHotv8W386hIT2qCktA416p-fjplr2ExXhjh7-ey_hCHYx5wAF1rKqvatJSUq1315P_0jLf5iZo6aiKhz6MLT7j4KVzpGh_RksvNKY70V0w3E973MVhj5XxA7EROFmxhH9hQ-NoHknuAzgnB2FHl853tl6vig_Ke06jw8EzOcwjCPXXDXmpKV-qR003__mC0)
 
 ***Tài liệu giải thích lý do thiết kế ca sử dụng cho hệ thống Payroll System
+
 -Giới thiệu: Lý do thiết kế các mô-đun trong hệ thống Payroll System
 
 +Hệ thống Payroll đóng vai trò quan trọng trong việc tính toán và quản lý lương của nhân viên. Để đảm bảo tính chính xác và hiệu quả, hệ thống cần thiết kế các mô-đun như Maintain Timecard (Duy trì bảng chấm công), Process Payroll (Xử lý lương), và Generate Reports (Tạo báo cáo). Các mô-đun này giúp quản lý thông tin giờ làm việc, tính toán lương chính xác và tạo ra báo cáo tài chính rõ ràng.
