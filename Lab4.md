@@ -6,12 +6,19 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 +Duy trì bảng chấm công là một quy trình quan trọng trong việc quản lý nhân sự và tính lương. Công việc này giúp đảm bảo rằng giờ làm việc của nhân viên được ghi nhận chính xác, tạo cơ sở để tính lương đúng và tuân thủ các quy định của pháp luật lao động.
 
 -Các bước thực hiện duy trì bảng chấm công:
+
 +Cài đặt hệ thống chấm công
+
 +Đảm bảo nhân viên đăng ký giờ làm chính xác
+
 +Quản lý giờ làm việc và giờ làm thêm
+
 +Quản lý các trường hợp vắng mặt
+
 +Kiểm tra và duyệt bảng chấm công
+
 +Phê duyệt và tính lương
+
 +Lưu trữ và báo cáo
 
 -Sơ đồ chi tiết:
@@ -24,13 +31,21 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 +Xử lý lương là quá trình tính toán, phê duyệt và trả lương cho nhân viên dựa trên dữ liệu bảng chấm công, hợp đồng lao động và các khoản phụ cấp, trừ lương theo quy định của công ty và pháp luật lao động. Quá trình này bao gồm việc kiểm tra và xử lý các thông tin như giờ làm việc, làm thêm giờ, nghỉ phép, các khoản thưởng, khấu trừ bảo hiểm, thuế thu nhập cá nhân, và các khoản thanh toán khác.
 
 -Các bước thực hiện "Xử lý lương":
+
 +Thu thập dữ liệu chấm công
+
 +Xác định các khoản lương cơ bản
+
 +Tính toán các khoản khấu trừ
+
 +Tính toán các khoản thưởng và phúc lợi
+
 +Cập nhật các khoản trừ và phụ cấp
+
 +Kiểm tra và phê duyệt bảng lương
+
 +Thanh toán lương
+
 +Lưu trữ và báo cáo
 
 -Sơ đồ chi tiết:
@@ -43,11 +58,17 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 +Tạo báo cáo là quá trình thu thập, phân tích và trình bày các dữ liệu liên quan đến hoạt động của công ty, bao gồm báo cáo về lương, chấm công, hiệu suất làm việc, chi phí, v.v. Các báo cáo này sẽ giúp các bộ phận liên quan đưa ra quyết định chính xác hơn. Quá trình này liên quan đến việc trích xuất dữ liệu từ các hệ thống, xử lý và xuất ra báo cáo dưới dạng dễ hiểu cho các bên liên quan.
 
 -Các bước thực hiện "Tạo báo cáo":
+
 +Thu thập dữ liệu
+
 +Xử lý dữ liệu
+
 +Tạo báo cáo
+
 +Kiểm tra và xác nhận báo cáo
+
 +Phê duyệt báo cáo
+
 +Lưu trữ và phân phối báo cáo
 
 -Sơ đồ chi tiết:
