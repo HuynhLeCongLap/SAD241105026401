@@ -137,10 +137,6 @@ Các bước thực hiện "Duy trì mã charge code":
 
 +Report Output: Xuất báo cáo dưới các định dạng dễ sử dụng.
 
-***Kết luận:
-
--Việc thiết kế các mô-đun như Maintain Timecard, Process Payroll, và Generate Reports giúp hệ thống Payroll hoạt động hiệu quả và chính xác, đáp ứng nhu cầu quản lý lương và tài chính của công ty.
-
 4. Manage Employee (Quản lý nhân viên)
 
 *Lý do thiết kế:
