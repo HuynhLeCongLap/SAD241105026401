@@ -128,6 +128,7 @@ Các bước thực hiện "Duy trì mã charge code":
 
 *Lý do thiết kế:
 
+
 -Mô-đun báo cáo giúp tạo ra các báo cáo tổng hợp về lương, chi phí lao động, và các khoản khấu trừ để hỗ trợ quyết định trong quản lý nhân sự và tài chính.
 
 +Report Input: Nhập yêu cầu báo cáo.
