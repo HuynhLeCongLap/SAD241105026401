@@ -140,3 +140,21 @@ Các bước thực hiện "Duy trì mã charge code":
 ***Kết luận:
 
 -Việc thiết kế các mô-đun như Maintain Timecard, Process Payroll, và Generate Reports giúp hệ thống Payroll hoạt động hiệu quả và chính xác, đáp ứng nhu cầu quản lý lương và tài chính của công ty.
+
+4. Manage Employee (Quản lý nhân viên)
+
+*Lý do thiết kế:
+
+-Quản lý thông tin nhân viên là yêu cầu cơ bản trong hệ thống nhân sự, bao gồm thêm mới, chỉnh sửa hoặc xóa thông tin. Việc chia thành các thành phần như Employee Form, Employee Controller, và Employee Database giúp quản lý dữ liệu tập trung, dễ dàng mở rộng và thay đổi khi cần thiết.
+
+5. Maintain Charge Codes (Duy trì mã charge code)
+
+*Lý do thiết kế:
+
++Charge code giúp phân loại công việc và xác định dự án mà nhân viên tham gia. Việc duy trì mã charge code đảm bảo tính nhất quán trong việc quản lý bảng chấm công và công việc. Mô-đun này bao gồm Charge Code Form, Charge Code Controller, và Project Management Database để lưu trữ và tra cứu mã hiệu quả.
+
+6. Manage Purchase Orders (Quản lý đơn mua hàng)
+
+*Lý do thiết kế:
+
+-Hệ thống quản lý đơn mua hàng giúp theo dõi và quản lý các đơn hàng phục vụ cho dự án. Các thành phần như Purchase Order Database lưu trữ thông tin đơn mua hàng và có khả năng cập nhật trạng thái theo thời gian, đồng thời tích hợp với các phần khác để quản lý tài chính hiệu quả.
