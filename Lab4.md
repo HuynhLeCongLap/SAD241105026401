@@ -73,3 +73,19 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 
 -Sơ đồ chi tiết:
 + ![Diagram](https://www.planttext.com/api/plantuml/png/V9InRjim48PtFiN1S_C21Xm4rb03SGhNqP2LeGLBW4GfD5LKSuVE6RlL2Om21OmcG2OJHWO6UGy-GLwXHr9k947kGWs-_x_l_iFvJJsVhIGLiinIGfdC1Gp6Hls0MMnsMmwVOdt7uTAenm7G5KpcXwBFfTdTSvZglVlXWdAwZ0I9k4na1OE9KTyXZ8swvKi8q6kJGQ2V-D9LXqaM1LGiBgkLZB9-KQYtF8RfwyFhkbRDQ2NoDEs8d2i4HcqWDBjr3cEDJu2F4ysZ8XSopFEKaD48tKkGThG25aRzWJJ1dYMCHcGoXvFJ3XaCOOheLQkM-McOxKiwzUY0FaC81QPpN5KtQmtKsqkw458V0cdN7-_LLjcnhupQGght_KE_PuHsGObnCYGfZlB35_tpdtr3tBNoAvIvNdCd-Tf3uRVY5dTj5yViWsJ_i-rKroGVsXct3Hf9fIXF6lANMtqFqdewbdF4-fQ15DGpwpK3xe-X1UYZSxuDYO-UnUxZjCoeN_HTMklgUq7nHmobYSFY76xySM5Kv51uw3MBzMzOb1Lc9nkkbXnl1NSlRBQMl72dMzXpIlhGMvasjCTHPxsEX9n5V67_F_u2003__mC0)
+
+5. Maintain Charge Codes (Duy trì mã charge code)
+
+-Mô tả chi tiết: Duy trì mã charge code là quá trình quản lý và cập nhật các mã charge code (mã chi phí) trong hệ thống tài chính hoặc kế toán của công ty. Mã charge code thường được sử dụng để phân loại các chi phí liên quan đến các dự án, hoạt động hoặc bộ phận cụ thể. Việc duy trì mã charge code bao gồm việc tạo mới, cập nhật hoặc xóa các mã charge code khi cần thiết, đảm bảo chúng được sử dụng chính xác trong các giao dịch tài chính.
+
+Các bước thực hiện "Duy trì mã charge code":
++Xác định yêu cầu tạo mã charge code
++Tạo mã charge code mới
++Cập nhật mã charge code hiện có
++Kiểm tra và xác nhận mã charge code
++Phê duyệt và công nhận mã charge code
++Lưu trữ và phân phối mã charge code
+
+-Sơ đồ chi tiết:
++![Diagram](https://www.planttext.com/api/plantuml/png/f9I_IiD07CVtFCMFxhw042aMj62LscRGyKX3Bz1SGd8HCpiuE7KKbzOEGY6ekEKGXok-nps1h-3TrTX8axJ5zVBxVdxVtxzyiOzcH558Osza89lw8JGE1Rk7BXPPIi3Y4nTQcAS4Dm15SEGIH6odBFGCyqS2VS5UTMIxbmUTnoAR4UZmT_tX514qT4B38TIb2JJQWjs2XGKRao6iOcLMLw9vgaKjFw9BeITr_IIYZcSOfWaNV6h3OYpO7S6Gy7aCjiYUOg0Yc_hWyHdO68L31sn_u81f6kqUx1taTS0-70kMkfkLdc0Fhf7B9A7CaSHTRW1fqrPr2cMn55sTiePMYLhLRuMoup2I3BU2eHotv8W386hIT2qCktA416p-fjplr2ExXhjh7-ey_hCHYx5wAF1rKqvatJSUq1315P_0jLf5iZo6aiKhz6MLT7j4KVzpGh_RksvNKY70V0w3E973MVhj5XxA7EROFmxhH9hQ-NoHknuAzgnB2FHl853tl6vig_Ke06jw8EzOcwjCPXXDXmpKV-qR003__mC0)
+
