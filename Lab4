@@ -11,7 +11,7 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 +Phê duyệt và tính lương
 +Lưu trữ và báo cáo
 -Sơ đồ chi tiết:
-![Diagram](https://www.planttext.com/api/plantuml/png/V9F1IiD048Rl-nHZJmgsqgPD8GUfbkB1KbHyWJI9II3Pb6PJwzc3UEnPXCRYmOAq1q5840yhUOzz0b_1JI9f8gcNaEpE_ytC_vFlyBFZ4dbCFDj2EwfsPM8DBdhTowF1IRy7YYMxBaARWyfnj6RXWm9r2RfqRiBNZ0Nl10mMtW7XpndMGJ5Oy6o3Gj-mNW7P1PTeetePfI71mA1F62OcNUA242PqxXoCPNv8Nx41K-eh6QnH1XCaEFTOiC1WqG_GJHO-yhUv7PFodyIWIpj32MMePW4rOS6A3sGdc-uETBxcFOmC-ZBQ1xwnNQlLzZ9UiupNak2K3t3Bc_EDudbKxuPRHc0OTzbYMQiC9KfmnXV8036C90vPqJhoStAnJDwMe1-jFJu72rU9U4XzXpVsdKpOHYX93AggSushXwdbK4nywc0TfHVvCW7-YJJJ20LD4qgIYqVRn8NIkhog1Lj3Gkbzlbg4hH5aKua5HHl-EFthBq8T3Qln__83003__mC0)
++![Diagram](https://www.planttext.com/api/plantuml/png/V9F1IiD048Rl-nHZJmgsqgPD8GUfbkB1KbHyWJI9II3Pb6PJwzc3UEnPXCRYmOAq1q5840yhUOzz0b_1JI9f8gcNaEpE_ytC_vFlyBFZ4dbCFDj2EwfsPM8DBdhTowF1IRy7YYMxBaARWyfnj6RXWm9r2RfqRiBNZ0Nl10mMtW7XpndMGJ5Oy6o3Gj-mNW7P1PTeetePfI71mA1F62OcNUA242PqxXoCPNv8Nx41K-eh6QnH1XCaEFTOiC1WqG_GJHO-yhUv7PFodyIWIpj32MMePW4rOS6A3sGdc-uETBxcFOmC-ZBQ1xwnNQlLzZ9UiupNak2K3t3Bc_EDudbKxuPRHc0OTzbYMQiC9KfmnXV8036C90vPqJhoStAnJDwMe1-jFJu72rU9U4XzXpVsdKpOHYX93AggSushXwdbK4nywc0TfHVvCW7-YJJJ20LD4qgIYqVRn8NIkhog1Lj3Gkbzlbg4hH5aKua5HHl-EFthBq8T3Qln__83003__mC0)
 2. Process Payroll (Xử lý lương)
 -Mô tả chi tiết:
 +Xử lý lương là quá trình tính toán, phê duyệt và trả lương cho nhân viên dựa trên dữ liệu bảng chấm công, hợp đồng lao động và các khoản phụ cấp, trừ lương theo quy định của công ty và pháp luật lao động. Quá trình này bao gồm việc kiểm tra và xử lý các thông tin như giờ làm việc, làm thêm giờ, nghỉ phép, các khoản thưởng, khấu trừ bảo hiểm, thuế thu nhập cá nhân, và các khoản thanh toán khác.
@@ -24,5 +24,5 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 +Kiểm tra và phê duyệt bảng lương
 +Thanh toán lương
 +Lưu trữ và báo cáo
-
+-Sơ đồ chi tiết:
 +![Diagram](https://www.planttext.com/api/plantuml/png/Z5InQkD04Etr5KFgv0S2FaBC4SC54n8NQUMrq0fBAoEl0YgF52bIkKmHpefnayCa1rTvYnHh_1_x1VSBDxjhox9aWIi9TjwRzzxCxZ_nTJ7cRiBJA7HSmkC4laUZCCuy3zmnUD78yHWFU0OdRQgMymZQyY_peQF44_Ie4XFcd-ZANX1vRJSPt6LZxaK5w5A95xX1v891byet1dTA_368pcrHLMQ3dbmm2jVhptM-uRvnioGEmmfrrzTq7JdTL5swREWuhHOIfS1ron4CbFY0C43w58ZLJup-Lij1Rt3shI8Spk5AYKM01AQE1mnynBz2AASHF6WgubGmoDAvHMGxHGJ1BisDZS1xcHDOJPHuHgEXDGfadKDVBMTCQqCw9DtplSzVHpt8AOmmmhcjSFR11zXipZKY6w4vux7C6Uf6jKCQcov3xGNZJPJuhOKUsKKpnq0nZyVe5BDDrV9BVu3PEM4F_CLv7alOB6f8yQXcWjFrfnA_qAZDIIu9X4hCWgFIBYr3GNHQPZbMTWDQg_rXma4JxbRYEmpI33U8sy7unQmQ9PSuzY5rVTM5hRHOJUGC-2x0pSLoYq1hMlJrEtHx2DKc7banhQqa0q2WleSePLl6qSFFNPNkYs-1dUw7YQOlyrWlG7nm0QqnirLckNXPp46NErSDRAN-bLYT2uyDzDFv7m00__y30000)
