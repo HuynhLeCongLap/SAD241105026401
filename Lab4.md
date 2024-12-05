@@ -108,21 +108,34 @@ Các bước thực hiện "Duy trì mã charge code":
 -Bảng chấm công là nền tảng để tính toán lương và phụ cấp. Nhân viên cần nhập giờ làm việc, ca làm việc, và mã charge code để hỗ trợ tính toán lương chính xác. Hệ thống cần đảm bảo tính toàn vẹn và dễ dàng cập nhật thông tin.
 
 +Timecard Form: Giao diện nhập liệu đơn giản.
+
 +Timecard Controller: Xử lý và xác thực dữ liệu.
+
 +Timecard Database: Lưu trữ và truy xuất dữ liệu chính xác.
+
 2. Process Payroll (Xử lý lương)
+
 *Lý do thiết kế:
 -Mô-đun này thực hiện việc tính toán lương dựa trên thông tin từ bảng chấm công, bao gồm lương cơ bản, phụ cấp, làm thêm giờ, và các khoản khấu trừ.
 
 +Payroll Input: Nhập liệu lương từ bảng chấm công.
+
 +Payroll Calculation Engine: Tính toán lương dựa trên các yếu tố khác nhau.
+
 +Payroll Output: Kết quả lương được hiển thị rõ ràng.
+
 3. Generate Reports (Tạo báo cáo)
+
 *Lý do thiết kế:
+
 -Mô-đun báo cáo giúp tạo ra các báo cáo tổng hợp về lương, chi phí lao động, và các khoản khấu trừ để hỗ trợ quyết định trong quản lý nhân sự và tài chính.
 
 +Report Input: Nhập yêu cầu báo cáo.
+
 +Report Generation Engine: Tạo báo cáo dựa trên dữ liệu.
+
 +Report Output: Xuất báo cáo dưới các định dạng dễ sử dụng.
+
 ***Kết luận:
+
 -Việc thiết kế các mô-đun như Maintain Timecard, Process Payroll, và Generate Reports giúp hệ thống Payroll hoạt động hiệu quả và chính xác, đáp ứng nhu cầu quản lý lương và tài chính của công ty.
