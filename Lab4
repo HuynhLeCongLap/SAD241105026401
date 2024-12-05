@@ -11,7 +11,7 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 +Phê duyệt và tính lương
 +Lưu trữ và báo cáo
 -Sơ đồ chi tiết:
-+![Diagram](https://www.planttext.com/api/plantuml/png/V9F1IiD048Rl-nHZJmgsqgPD8GUfbkB1KbHyWJI9II3Pb6PJwzc3UEnPXCRYmOAq1q5840yhUOzz0b_1JI9f8gcNaEpE_ytC_vFlyBFZ4dbCFDj2EwfsPM8DBdhTowF1IRy7YYMxBaARWyfnj6RXWm9r2RfqRiBNZ0Nl10mMtW7XpndMGJ5Oy6o3Gj-mNW7P1PTeetePfI71mA1F62OcNUA242PqxXoCPNv8Nx41K-eh6QnH1XCaEFTOiC1WqG_GJHO-yhUv7PFodyIWIpj32MMePW4rOS6A3sGdc-uETBxcFOmC-ZBQ1xwnNQlLzZ9UiupNak2K3t3Bc_EDudbKxuPRHc0OTzbYMQiC9KfmnXV8036C90vPqJhoStAnJDwMe1-jFJu72rU9U4XzXpVsdKpOHYX93AggSushXwdbK4nywc0TfHVvCW7-YJJJ20LD4qgIYqVRn8NIkhog1Lj3Gkbzlbg4hH5aKua5HHl-EFthBq8T3Qln__83003__mC0)
++![Diagram](https://www.planttext.com/api/plantuml/png/Z9J1IiD048RlUOgX9mLz0I5Ih491ARND2yGa987i9gIRG8xYGJpsw46e5WyMIXK48Q5uMEbxx1Fu2iucLPgQbDp2yl__V3Cxc-_iiprYUiWYuYcwmVmGpaZW-ObbWJu2YmIAHPdB4cXrHNOBcYEoCRMXuuZqcK27lrEx9PMQIwoE7fh3PCGiycSw4Tazz54yfz1p-1E5eSZUSaTtK1sjyJbru6BrkdfSP_Vr9FGzRnsjgEewAdRvZ89He1WI1LHLGMOuFDu2WgDVv48NyudVJ1dgofO0BTs1b65N0L3P70DJP0lmN6maAX7bkETuVaE0XNgjJf9ZQXLE0tSTeXQAT0gnoAvt0rv6gAFWyINOA7d0hmd1-QBQQ4QsOMCEdv7QeKNOgu7bW_-MBP9Of0iK4v5-i6OG9STUpyQDkeF0uI_10U1oaVq6L8WYhuEvj1INmvr62Kw4mPLaj9lUtmvN0vwgMbzZFWMpYCt1QbTn9sdfNPMhrgvfgNGve2fnawkw4xmyOFcJzuedhoXjYvhoV_G3003__mC0)
 2. Process Payroll (Xử lý lương)
 -Mô tả chi tiết:
 +Xử lý lương là quá trình tính toán, phê duyệt và trả lương cho nhân viên dựa trên dữ liệu bảng chấm công, hợp đồng lao động và các khoản phụ cấp, trừ lương theo quy định của công ty và pháp luật lao động. Quá trình này bao gồm việc kiểm tra và xử lý các thông tin như giờ làm việc, làm thêm giờ, nghỉ phép, các khoản thưởng, khấu trừ bảo hiểm, thuế thu nhập cá nhân, và các khoản thanh toán khác.
