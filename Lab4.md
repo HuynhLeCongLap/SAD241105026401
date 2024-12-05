@@ -96,3 +96,32 @@ Các bước thực hiện "Duy trì mã charge code":
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/f9I_IiD07CVtFCMFxhw042aMj62LscRGyKX3Bz1SGd8HCpiuE7KKbzOEGY6ekEKGXok-nps1h-3TrTX8axJ5zVBxVdxVtxzyiOzcH558Osza89lw8JGE1Rk7BXPPIi3Y4nTQcAS4Dm15SEGIH6odBFGCyqS2VS5UTMIxbmUTnoAR4UZmT_tX514qT4B38TIb2JJQWjs2XGKRao6iOcLMLw9vgaKjFw9BeITr_IIYZcSOfWaNV6h3OYpO7S6Gy7aCjiYUOg0Yc_hWyHdO68L31sn_u81f6kqUx1taTS0-70kMkfkLdc0Fhf7B9A7CaSHTRW1fqrPr2cMn55sTiePMYLhLRuMoup2I3BU2eHotv8W386hIT2qCktA416p-fjplr2ExXhjh7-ey_hCHYx5wAF1rKqvatJSUq1315P_0jLf5iZo6aiKhz6MLT7j4KVzpGh_RksvNKY70V0w3E973MVhj5XxA7EROFmxhH9hQ-NoHknuAzgnB2FHl853tl6vig_Ke06jw8EzOcwjCPXXDXmpKV-qR003__mC0)
 
+***Tài liệu giải thích lý do thiết kế ca sử dụng cho hệ thống Payroll System
+-Giới thiệu: Lý do thiết kế các mô-đun trong hệ thống Payroll System
+
++Hệ thống Payroll đóng vai trò quan trọng trong việc tính toán và quản lý lương của nhân viên. Để đảm bảo tính chính xác và hiệu quả, hệ thống cần thiết kế các mô-đun như Maintain Timecard (Duy trì bảng chấm công), Process Payroll (Xử lý lương), và Generate Reports (Tạo báo cáo). Các mô-đun này giúp quản lý thông tin giờ làm việc, tính toán lương chính xác và tạo ra báo cáo tài chính rõ ràng.
+
+1. Maintain Timecard (Duy trì bảng chấm công)
+*Lý do thiết kế:
+
+-Bảng chấm công là nền tảng để tính toán lương và phụ cấp. Nhân viên cần nhập giờ làm việc, ca làm việc, và mã charge code để hỗ trợ tính toán lương chính xác. Hệ thống cần đảm bảo tính toàn vẹn và dễ dàng cập nhật thông tin.
+
++Timecard Form: Giao diện nhập liệu đơn giản.
++Timecard Controller: Xử lý và xác thực dữ liệu.
++Timecard Database: Lưu trữ và truy xuất dữ liệu chính xác.
+2. Process Payroll (Xử lý lương)
+*Lý do thiết kế:
+-Mô-đun này thực hiện việc tính toán lương dựa trên thông tin từ bảng chấm công, bao gồm lương cơ bản, phụ cấp, làm thêm giờ, và các khoản khấu trừ.
+
++Payroll Input: Nhập liệu lương từ bảng chấm công.
++Payroll Calculation Engine: Tính toán lương dựa trên các yếu tố khác nhau.
++Payroll Output: Kết quả lương được hiển thị rõ ràng.
+3. Generate Reports (Tạo báo cáo)
+*Lý do thiết kế:
+-Mô-đun báo cáo giúp tạo ra các báo cáo tổng hợp về lương, chi phí lao động, và các khoản khấu trừ để hỗ trợ quyết định trong quản lý nhân sự và tài chính.
+
++Report Input: Nhập yêu cầu báo cáo.
++Report Generation Engine: Tạo báo cáo dựa trên dữ liệu.
++Report Output: Xuất báo cáo dưới các định dạng dễ sử dụng.
+***Kết luận:
+-Việc thiết kế các mô-đun như Maintain Timecard, Process Payroll, và Generate Reports giúp hệ thống Payroll hoạt động hiệu quả và chính xác, đáp ứng nhu cầu quản lý lương và tài chính của công ty.
