@@ -26,3 +26,14 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 +Lưu trữ và báo cáo
 -Sơ đồ chi tiết:
 +![Diagram](https://www.planttext.com/api/plantuml/png/Z5InQkD04Etr5KFgv0S2FaBC4SC54n8NQUMrq0fBAoEl0YgF52bIkKmHpefnayCa1rTvYnHh_1_x1VSBDxjhox9aWIi9TjwRzzxCxZ_nTJ7cRiBJA7HSmkC4laUZCCuy3zmnUD78yHWFU0OdRQgMymZQyY_peQF44_Ie4XFcd-ZANX1vRJSPt6LZxaK5w5A95xX1v891byet1dTA_368pcrHLMQ3dbmm2jVhptM-uRvnioGEmmfrrzTq7JdTL5swREWuhHOIfS1ron4CbFY0C43w58ZLJup-Lij1Rt3shI8Spk5AYKM01AQE1mnynBz2AASHF6WgubGmoDAvHMGxHGJ1BisDZS1xcHDOJPHuHgEXDGfadKDVBMTCQqCw9DtplSzVHpt8AOmmmhcjSFR11zXipZKY6w4vux7C6Uf6jKCQcov3xGNZJPJuhOKUsKKpnq0nZyVe5BDDrV9BVu3PEM4F_CLv7alOB6f8yQXcWjFrfnA_qAZDIIu9X4hCWgFIBYr3GNHQPZbMTWDQg_rXma4JxbRYEmpI33U8sy7unQmQ9PSuzY5rVTM5hRHOJUGC-2x0pSLoYq1hMlJrEtHx2DKc7banhQqa0q2WleSePLl6qSFFNPNkYs-1dUw7YQOlyrWlG7nm0QqnirLckNXPp46NErSDRAN-bLYT2uyDzDFv7m00__y30000)
+3. Generate Reports (Tạo báo cáo)
+-Mô tả chi tiết:
++Tạo báo cáo là quá trình thu thập, phân tích và trình bày các dữ liệu liên quan đến hoạt động của công ty, bao gồm báo cáo về lương, chấm công, hiệu suất làm việc, chi phí, v.v. Các báo cáo này sẽ giúp các bộ phận liên quan đưa ra quyết định chính xác hơn. Quá trình này liên quan đến việc trích xuất dữ liệu từ các hệ thống, xử lý và xuất ra báo cáo dưới dạng dễ hiểu cho các bên liên quan.
+-Các bước thực hiện "Tạo báo cáo":
++Thu thập dữ liệu
++Xử lý dữ liệu
++Tạo báo cáo
++Kiểm tra và xác nhận báo cáo
++Phê duyệt báo cáo
++Lưu trữ và phân phối báo cáo
++ ![Diagram](https://www.planttext.com/api/plantuml/png/V9InRjim48PtFiN1S_C21Xm4rb03SGhNqP2LeGLBW4GfD5LKSuVE6RlL2Om21OmcG2OJHWO6UGy-GLwXHr9k947kGWs-_x_l_iFvJJsVhIGLiinIGfdC1Gp6Hls0MMnsMmwVOdt7uTAenm7G5KpcXwBFfTdTSvZglVlXWdAwZ0I9k4na1OE9KTyXZ8swvKi8q6kJGQ2V-D9LXqaM1LGiBgkLZB9-KQYtF8RfwyFhkbRDQ2NoDEs8d2i4HcqWDBjr3cEDJu2F4ysZ8XSopFEKaD48tKkGThG25aRzWJJ1dYMCHcGoXvFJ3XaCOOheLQkM-McOxKiwzUY0FaC81QPpN5KtQmtKsqkw458V0cdN7-_LLjcnhupQGght_KE_PuHsGObnCYGfZlB35_tpdtr3tBNoAvIvNdCd-Tf3uRVY5dTj5yViWsJ_i-rKroGVsXct3Hf9fIXF6lANMtqFqdewbdF4-fQ15DGpwpK3xe-X1UYZSxuDYO-UnUxZjCoeN_HTMklgUq7nHmobYSFY76xySM5Kv51uw3MBzMzOb1Lc9nkkbXnl1NSlRBQMl72dMzXpIlhGMvasjCTHPxsEX9n5V67_F_u2003__mC0)
