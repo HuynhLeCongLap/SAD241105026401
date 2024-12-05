@@ -2,6 +2,7 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 1. Maintain Timecard (Duy trì bảng chấm công)
 
 -Mô tả chi tiết về "Duy trì bảng chấm công"
+
 +Duy trì bảng chấm công là một quy trình quan trọng trong việc quản lý nhân sự và tính lương. Công việc này giúp đảm bảo rằng giờ làm việc của nhân viên được ghi nhận chính xác, tạo cơ sở để tính lương đúng và tuân thủ các quy định của pháp luật lao động.
 
 -Các bước thực hiện duy trì bảng chấm công:
@@ -19,7 +20,9 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 3. Process Payroll (Xử lý lương)
 
 -Mô tả chi tiết:
+
 +Xử lý lương là quá trình tính toán, phê duyệt và trả lương cho nhân viên dựa trên dữ liệu bảng chấm công, hợp đồng lao động và các khoản phụ cấp, trừ lương theo quy định của công ty và pháp luật lao động. Quá trình này bao gồm việc kiểm tra và xử lý các thông tin như giờ làm việc, làm thêm giờ, nghỉ phép, các khoản thưởng, khấu trừ bảo hiểm, thuế thu nhập cá nhân, và các khoản thanh toán khác.
+
 -Các bước thực hiện "Xử lý lương":
 +Thu thập dữ liệu chấm công
 +Xác định các khoản lương cơ bản
@@ -36,7 +39,9 @@ CÁC CA SỬ DỤNG CHO HỆ THỐNG "PAYROLL SYSTEM"
 4. Generate Reports (Tạo báo cáo)
 
 -Mô tả chi tiết:
+
 +Tạo báo cáo là quá trình thu thập, phân tích và trình bày các dữ liệu liên quan đến hoạt động của công ty, bao gồm báo cáo về lương, chấm công, hiệu suất làm việc, chi phí, v.v. Các báo cáo này sẽ giúp các bộ phận liên quan đưa ra quyết định chính xác hơn. Quá trình này liên quan đến việc trích xuất dữ liệu từ các hệ thống, xử lý và xuất ra báo cáo dưới dạng dễ hiểu cho các bên liên quan.
+
 -Các bước thực hiện "Tạo báo cáo":
 +Thu thập dữ liệu
 +Xử lý dữ liệu
