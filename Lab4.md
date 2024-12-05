@@ -116,6 +116,7 @@ Các bước thực hiện "Duy trì mã charge code":
 2. Process Payroll (Xử lý lương)
 
 *Lý do thiết kế:
+
 -Mô-đun này thực hiện việc tính toán lương dựa trên thông tin từ bảng chấm công, bao gồm lương cơ bản, phụ cấp, làm thêm giờ, và các khoản khấu trừ.
 
 +Payroll Input: Nhập liệu lương từ bảng chấm công.
@@ -127,7 +128,6 @@ Các bước thực hiện "Duy trì mã charge code":
 3. Generate Reports (Tạo báo cáo)
 
 *Lý do thiết kế:
-
 
 -Mô-đun báo cáo giúp tạo ra các báo cáo tổng hợp về lương, chi phí lao động, và các khoản khấu trừ để hỗ trợ quyết định trong quản lý nhân sự và tài chính.
 
