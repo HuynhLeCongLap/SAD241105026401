@@ -147,7 +147,7 @@ Các bước thực hiện "Duy trì mã charge code":
 
 *Lý do thiết kế:
 
-+Charge code giúp phân loại công việc và xác định dự án mà nhân viên tham gia. Việc duy trì mã charge code đảm bảo tính nhất quán trong việc quản lý bảng chấm công và công việc. Mô-đun này bao gồm Charge Code Form, Charge Code Controller, và Project Management Database để lưu trữ và tra cứu mã hiệu quả.
+-Charge code giúp phân loại công việc và xác định dự án mà nhân viên tham gia. Việc duy trì mã charge code đảm bảo tính nhất quán trong việc quản lý bảng chấm công và công việc. Mô-đun này bao gồm Charge Code Form, Charge Code Controller, và Project Management Database để lưu trữ và tra cứu mã hiệu quả.
 
 6. Manage Purchase Orders (Quản lý đơn mua hàng)
 
