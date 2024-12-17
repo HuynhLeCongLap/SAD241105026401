@@ -52,6 +52,8 @@
 ## Phương thức:
 - toString(): Trả về dữ liệu thời tiết ở dạng chuỗi.
 
+# Sơ đồ lớp PlantUML
+
 ![Diagram](https://www.planttext.com/plantuml/png/f9DDQiCm48NtEeMMza8NC25aOKeBNPGuaFNK7XA1VencN0XDJzP5ZzGh55kA6xaj5EATtXl6dzwCFjy_DiGGUB1627Wc3j2oR0qGoGOT-I1VXPm-ceuFTIKR3jeTaiod7XVI0Ra6XgAiv9tnmE9DYDXoXxR703m4pBehEJZD_svpFrZTQJxTqkCf8D6D77i4Fc8OtRa1Vr_nKX-DOuBErJvXv2fhYyHW-qhMmBZJ5Yzn-yWsqYJA9Kx3mDgxcOZYUJ4v9Orl9sCXnpbJ9HyryIh6iqv_XwwBGX6hghGaPV83Ml-I8lsZfFN6O3idUXNX7BSRyyCjzZvmKOxtIqDQdPNwkKEPcwz6PkKJ5s8HbrBhXFgRSyqfDkYwySLy0G00__y30000)
 
 
