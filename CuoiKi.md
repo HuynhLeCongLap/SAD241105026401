@@ -53,3 +53,12 @@
 - toString(): Trả về dữ liệu thời tiết ở dạng chuỗi.
 
 ![Diagram](https://www.planttext.com/plantuml/png/f9DDQiCm48NtEeMMza8NC25aOKeBNPGuaFNK7XA1VencN0XDJzP5ZzGh55kA6xaj5EATtXl6dzwCFjy_DiGGUB1627Wc3j2oR0qGoGOT-I1VXPm-ceuFTIKR3jeTaiod7XVI0Ra6XgAiv9tnmE9DYDXoXxR703m4pBehEJZD_svpFrZTQJxTqkCf8D6D77i4Fc8OtRa1Vr_nKX-DOuBErJvXv2fhYyHW-qhMmBZJ5Yzn-yWsqYJA9Kx3mDgxcOZYUJ4v9Orl9sCXnpbJ9HyryIh6iqv_XwwBGX6hghGaPV83Ml-I8lsZfFN6O3idUXNX7BSRyyCjzZvmKOxtIqDQdPNwkKEPcwz6PkKJ5s8HbrBhXFgRSyqfDkYwySLy0G00__y30000)
+
+
+## Mô tả sơ đồ
+- Sensor: Là lớp trừu tượng dùng làm cơ sở cho các loại cảm biến như TemperatureSensor, HumiditySensor, và PressureSensor.
+- WeatherStation: Chứa danh sách các cảm biến, có chức năng thu thập dữ liệu và tạo báo cáo.
+- WeatherData: Lưu trữ dữ liệu thời tiết bao gồm nhiệt độ, độ ẩm, áp suất và thời gian thu thập.
+## Quan hệ:
+- Lớp WeatherStation có quan hệ với Sensor (mối quan hệ chứa).
+- Lớp Sensor là lớp cha của các cảm biến con (TemperatureSensor, HumiditySensor, PressureSensor).
