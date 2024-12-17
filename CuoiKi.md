@@ -1,66 +1,84 @@
 # A wilderness weather station
-## Thiết kế lớp
-# 1.Lớp WeatherStation
+Thiết kế lớp
+# 1. Lớp Cảm Biến (Sensors)
 
-- Đại diện cho trạm thời tiết. Chịu trách nhiệm quản lý các cảm biến, thu thập dữ liệu và báo cáo thông tin.
+- Chức năng: Thu thập dữ liệu thời tiết từ các cảm biến
 ## Thuộc tính:
-- stationID: ID của trạm.
-- location: Vị trí của trạm.
-- sensors: Danh sách các cảm biến kết nối với trạm.
+- data (dict): Lưu trữ dữ liệu thô từ các cảm biến như nhiệt độ, độ ẩm, tốc độ gió, áp suất và lượng mưa.
 ## Phương thức:
-- addSensor(Sensor sensor): Thêm cảm biến.
-- removeSensor(Sensor sensor): Loại bỏ cảm biến.
-- collectData(): Thu thập dữ liệu từ tất cả cảm biến.
-- generateReport(): Tạo báo cáo từ dữ liệu thu thập.
-# 2.Lớp Sensor (Lớp cơ sở - Abstract Class)
+- __init__(self): Khởi tạo đối tượng và các cảm biến.
+- collect_data(self): Thu thập dữ liệu từ các cảm biến..
+- send_data(self): Gửi dữ liệu thu thập được đến lớp xử lý dữ liệu.
+# 2. Lớp Xử Lý Dữ Liệu (DataProcessor)
 
-- Đại diện cho các cảm biến chung (ví dụ: nhiệt độ, độ ẩm, áp suất).
+- Chức năng: Xử lý dữ liệu thô từ cảm biến.
 ## Thuộc tính:
-- sensorID: ID của cảm biến.
-- type: Loại cảm biến (nhiệt độ, độ ẩm, v.v.).
+- raw_data (dict): Dữ liệu thô nhận từ lớp cảm biến.
+- clean_data (dict): Dữ liệu đã được làm sạch và chuẩn hóa.
 ## Phương thức:
-- getData(): Phương thức trừu tượng để lấy dữ liệu từ cảm biến.
-# 3.Lớp TemperatureSensor (Kế thừa từ Sensor)
+- __init__(self): Khởi tạo các thuộc tính dữ liệu.
+- clean_data(self, raw_data): Làm sạch và chuẩn hóa dữ liệu.
+- detect_faults(self, raw_data): Phát hiện và xử lý dữ liệu bất thường.
+- store_data(self): Lưu trữ dữ liệu đã xử lý tạm thời.
+- prepare_data(self): Chuẩn bị dữ liệu để gửi đi.
+# 3.Lớp Quản Lý Năng Lượng (PowerManagement)
 
-- Cảm biến đo nhiệt độ.
+- Chức năng: Quản lý năng lượng của hệ thống.
 ## Thuộc tính:
-- unit: Đơn vị đo (°C, °F, v.v.).
+- energy_level (float): Mức năng lượng hiện tại.
+- energy_source (str): Nguồn năng lượng như pin mặt trời, gió,...
+- threshold (float): Ngưỡng năng lượng để điều chỉnh hoạt động của hệ thống.
 ## Phương thức:
-- getData(): Lấy dữ liệu nhiệt độ.
-# 4.Lớp HumiditySensor (Kế thừa từ Sensor)
+- __init__(self): Khởi tạo năng lượng và nguồn năng lượng.
+- monitor_energy(self): Theo dõi mức năng lượng hiện tại.
+- optimize_energy(self): Điều chỉnh hoạt động hệ thống dựa trên mức năng lượng.
+- allocate_energy(self): Phân bổ năng lượng cho các thành phần ưu tiên.
+# 4. Lớp Truyền Thông (Communication)
 
-- Cảm biến đo độ ẩm.
+- Chức năng: Truyền dữ liệu và nhận lệnh từ trung tâm.
 ## Thuộc tính:
-- unit: Đơn vị đo (%).
+- satellite_link (bool): Trạng thái kết nối với vệ tinh.
+- transmission_data (dict): Dữ liệu đã xử lý cần truyền đi.
+- commands (list): Danh sách các lệnh nhận từ trung tâm.
 ## Phương thức:
-- getData(): Lấy dữ liệu độ ẩm.
-# 5.Lớp PressureSensor (Kế thừa từ Sensor)
+- __init__(self): Khởi tạo trạng thái kết nối và lệnh.
+- transmit_data(self, data): Gửi dữ liệu đến trung tâm qua vệ tinh.
+- receive_commands(self): Nhận lệnh từ trung tâm.
+- update_firmware(self): Nhận và cài đặt bản cập nhật phần mềm.
+# 5.Lớp Quản Lý Lỗi (FaultManagement)
 
-- Cảm biến đo áp suất khí quyển.
+- Chức năng: Giám sát và xử lý các lỗi phần cứng hoặc phần mềm.
 ## Thuộc tính:
-- unit: Đơn vị đo (hPa, atm, v.v.).
+- fault_status (str): Trạng thái lỗi hiện tại.
+- error_log (list): Nhật ký ghi lại các lỗi phát hiện được.
 ## Phương thức:
-- getData(): Lấy dữ liệu áp suất.
-# 6.Lớp WeatherData
+- __init__(self): Khởi tạo trạng thái lỗi và nhật ký lỗi.
+- detect_faults(self): Phát hiện lỗi phần cứng hoặc phần mềm.
+- recover_system(self): Kích hoạt cơ chế khắc phục (tự cấu hình lại hoặc khởi động lại).
+- log_error(self, error): Ghi lại thông tin lỗi vào nhật ký.
+# 6.Lớp Điều Khiển Chính (MainController)
 
-- Lưu trữ dữ liệu thời tiết được thu thập.
+- Chức năng: Điều phối hoạt động của tất cả các lớp trong hệ thống.
 ## Thuộc tính:
-- temperature: Nhiệt độ.
-- humidity: Độ ẩm.
--- pressure: Áp suất khí quyển.
-- timestamp: Thời gian thu thập dữ liệu.
+- sensors (Sensors): Đối tượng cảm biến.
+- data_processor (DataProcessor): Đối tượng xử lý dữ liệu.
+- power_manager (PowerManagement): Đối tượng quản lý năng lượng.
+- communication (Communication): Đối tượng truyền thông.
+- fault_manager (FaultManagement): Đối tượng quản lý lỗi.
 ## Phương thức:
-- toString(): Trả về dữ liệu thời tiết ở dạng chuỗi.
-
+- __init__(self): Khởi tạo tất cả các thành phần của hệ thống.
+- collect_and_process(self): Yêu cầu cảm biến thu thập dữ liệu và gửi đến bộ xử lý dữ liệu.
+- manage_power(self): Theo dõi và phân bổ năng lượng hệ thống.
+- handle_faults(self): Kiểm tra và xử lý lỗi nếu có.
+- transmit_data(self): Truyền dữ liệu đến trung tâm.
+- execute_commands(self): Nhận và thực thi lệnh từ trung tâm.
+- run_system(self): Vòng lặp chính điều khiển hoạt động của hệ thống.
+# TỔNG KẾT
+## Hệ thống được phân chia thành 6 lớp với vai trò cụ thể:
+### DataProcessor: Làm sạch và chuẩn bị dữ liệu.
+### PowerManagement: Quản lý năng lượng.
+### ommunication: Truyền và nhận dữ liệu.
+### FaultManagement: Giám sát và khắc phục lỗi.
+### MainController: Điều phối hoạt động của toàn bộ hệ thống.
 # Sơ đồ lớp PlantUML
-
-![Diagram](https://www.planttext.com/plantuml/png/f9DDQiCm48NtEeMMza8NC25aOKeBNPGuaFNK7XA1VencN0XDJzP5ZzGh55kA6xaj5EATtXl6dzwCFjy_DiGGUB1627Wc3j2oR0qGoGOT-I1VXPm-ceuFTIKR3jeTaiod7XVI0Ra6XgAiv9tnmE9DYDXoXxR703m4pBehEJZD_svpFrZTQJxTqkCf8D6D77i4Fc8OtRa1Vr_nKX-DOuBErJvXv2fhYyHW-qhMmBZJ5Yzn-yWsqYJA9Kx3mDgxcOZYUJ4v9Orl9sCXnpbJ9HyryIh6iqv_XwwBGX6hghGaPV83Ml-I8lsZfFN6O3idUXNX7BSRyyCjzZvmKOxtIqDQdPNwkKEPcwz6PkKJ5s8HbrBhXFgRSyqfDkYwySLy0G00__y30000)
-
-
-## Mô tả sơ đồ
-- Sensor: Là lớp trừu tượng dùng làm cơ sở cho các loại cảm biến như TemperatureSensor, HumiditySensor, và PressureSensor.
-- WeatherStation: Chứa danh sách các cảm biến, có chức năng thu thập dữ liệu và tạo báo cáo.
-- WeatherData: Lưu trữ dữ liệu thời tiết bao gồm nhiệt độ, độ ẩm, áp suất và thời gian thu thập.
-## Quan hệ:
-- Lớp WeatherStation có quan hệ với Sensor (mối quan hệ chứa).
-- Lớp Sensor là lớp cha của các cảm biến con (TemperatureSensor, HumiditySensor, PressureSensor).
+![Diagram](https://www.planttext.com/plantuml/png/T5D1Zjim3Bpd5Joc1t_0XwB05hqji40V870b9X4gYGP99zqM-x8U-gH-eR3NTc8vkVYW8UaPpl3VdxzVr52ipsdd4wh2TohAel1x1m3GG413Q254R-CBWEUKo9iRaFqdQE7CCKoOKWaLyBwR9dz5mnTXJweiotp1Ywl_qO1FX6Np3ZVl-xcnOX381d87x9Ffeo8r5hehe1FgS8Cj6bxuGlAC1O-KgTYYWWh9ySqbEbE25Ww9qTQGSY-Ue0KrcH0x2Uc9KrXr06GkqLZSHsVDa3kBEVwY1p2cn1vj2oyQdZZdlaIF5hai2XIDKef6BiNo0rfuPKupKS6YEQf6tfhIWEUSiGI55bBKMSNKDENaZWb2dkAPtDnUA-cxCEWuHCaN5BgZvDjWyXqtHlET6bglgusJ28jBV5nJ3QlCR6docSJfcnhb6aryTEFK_VZTSdp6M9wuc0nNSuszJcVMpWTtSswkMwwaNL_DLDGDANHv53xKLAcyiUNgSxlsVRMfwwHgezN5OmapjteF7oFSoAp6JbX2eWVhNSUa0kad-TuUHqJwil7bVRUhTjuqdvSj_mS00F__0m00)
