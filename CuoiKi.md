@@ -1,8 +1,8 @@
 # A wilderness weather station
-Thiết kế lớp
+# Thiết kế lớp
 # 1. Lớp Cảm Biến (Sensors)
-
-- Chức năng: Thu thập dữ liệu thời tiết từ các cảm biến
+- Công dụng:Đây là lớp chịu trách nhiệm tương tác với môi trường vật lý, thu thập dữ liệu từ các cảm biến như nhiệt độ, độ ẩm, tốc độ gió, áp suất và lượng mưa.
+- Tại sao cần có:Là nguồn đầu vào chính của dữ liệu cho toàn bộ hệ thống, đảm bảo hệ thống có thông tin thời tiết thực tế để xử lý.
 ## Thuộc tính:
 - data (dict): Lưu trữ dữ liệu thô từ các cảm biến như nhiệt độ, độ ẩm, tốc độ gió, áp suất và lượng mưa.
 ## Phương thức:
@@ -10,8 +10,8 @@ Thiết kế lớp
 - collect_data(self): Thu thập dữ liệu từ các cảm biến..
 - send_data(self): Gửi dữ liệu thu thập được đến lớp xử lý dữ liệu.
 # 2. Lớp Xử Lý Dữ Liệu (DataProcessor)
-
-- Chức năng: Xử lý dữ liệu thô từ cảm biến.
+- Công dụng:Xử lý dữ liệu thô từ lớp cảm biến, làm sạch, chuẩn hóa, phát hiện bất thường và chuẩn bị dữ liệu để lưu trữ hoặc gửi đi.
+- Tại sao cần có:Dữ liệu thô từ cảm biến thường chứa nhiễu hoặc không đầy đủ; lớp này đảm bảo dữ liệu đầu ra chính xác, đáng tin cậy.
 ## Thuộc tính:
 - raw_data (dict): Dữ liệu thô nhận từ lớp cảm biến.
 - clean_data (dict): Dữ liệu đã được làm sạch và chuẩn hóa.
@@ -22,8 +22,8 @@ Thiết kế lớp
 - store_data(self): Lưu trữ dữ liệu đã xử lý tạm thời.
 - prepare_data(self): Chuẩn bị dữ liệu để gửi đi.
 # 3.Lớp Quản Lý Năng Lượng (PowerManagement)
-
-- Chức năng: Quản lý năng lượng của hệ thống.
+- Công dụng:Theo dõi và quản lý nguồn năng lượng, tối ưu hóa hoạt động của hệ thống dựa trên mức năng lượng hiện có.
+- Tại sao cần có:Hệ thống hoạt động trong môi trường khắc nghiệt cần tối ưu hóa sử dụng năng lượng, đặc biệt khi năng lượng từ pin mặt trời hoặc gió bị hạn chế.
 ## Thuộc tính:
 - energy_level (float): Mức năng lượng hiện tại.
 - energy_source (str): Nguồn năng lượng như pin mặt trời, gió,...
@@ -34,8 +34,8 @@ Thiết kế lớp
 - optimize_energy(self): Điều chỉnh hoạt động hệ thống dựa trên mức năng lượng.
 - allocate_energy(self): Phân bổ năng lượng cho các thành phần ưu tiên.
 # 4. Lớp Truyền Thông (Communication)
-
-- Chức năng: Truyền dữ liệu và nhận lệnh từ trung tâm.
+- Công dụng:Đảm bảo dữ liệu thời tiết được gửi đến trung tâm điều khiển và nhận lệnh từ trung tâm.
+- Tại sao cần có:Kết nối giữa trạm thời tiết và trung tâm điều khiển là yếu tố then chốt để đảm bảo dữ liệu được sử dụng hiệu quả.
 ## Thuộc tính:
 - satellite_link (bool): Trạng thái kết nối với vệ tinh.
 - transmission_data (dict): Dữ liệu đã xử lý cần truyền đi.
@@ -46,8 +46,8 @@ Thiết kế lớp
 - receive_commands(self): Nhận lệnh từ trung tâm.
 - update_firmware(self): Nhận và cài đặt bản cập nhật phần mềm.
 # 5.Lớp Quản Lý Lỗi (FaultManagement)
-
-- Chức năng: Giám sát và xử lý các lỗi phần cứng hoặc phần mềm.
+- Công dụng:Phát hiện và xử lý các lỗi phần cứng hoặc phần mềm trong hệ thống.
+- Tại sao cần có:Đảm bảo hệ thống duy trì hoạt động ổn định trong môi trường khắc nghiệt, giảm thiểu thời gian gián đoạn.
 ## Thuộc tính:
 - fault_status (str): Trạng thái lỗi hiện tại.
 - error_log (list): Nhật ký ghi lại các lỗi phát hiện được.
@@ -57,8 +57,8 @@ Thiết kế lớp
 - recover_system(self): Kích hoạt cơ chế khắc phục (tự cấu hình lại hoặc khởi động lại).
 - log_error(self, error): Ghi lại thông tin lỗi vào nhật ký.
 # 6.Lớp Điều Khiển Chính (MainController)
-
-- Chức năng: Điều phối hoạt động của tất cả các lớp trong hệ thống.
+- Công dụng:Điều phối và quản lý hoạt động của tất cả các lớp trong hệ thống.
+- Tại sao cần có:Tạo sự liên kết và điều phối giữa các lớp, đảm bảo hệ thống hoạt động hiệu quả và liên tục.
 ## Thuộc tính:
 - sensors (Sensors): Đối tượng cảm biến.
 - data_processor (DataProcessor): Đối tượng xử lý dữ liệu.
