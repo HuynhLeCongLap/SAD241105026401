@@ -128,7 +128,7 @@
 ## Hình ảnh mô tả lớp WeatherStation (Trạm Khí tượng)
 
 ![Diagram](https://www.planttext.com/plantuml/png/R8sn3K8n34JxJE4ILaX5mGOKr5PYWIN_H8hlWm0n6SKVYHLG2CsNS7VlpdVlrx9pSCCyMKZ6xdGKnbdQ0GojXHw1-bbDNnt9qRIS1hsEx9x1aR8c3EmtXqozOVRrWnQ5ikbTDjj8bwfvy5JD9E6ttVlMlal9_ynd-0000F__0m00)
-# 1.99 Data Management and Storage Subsystem (Hệ thống Quản lý và Lưu trữ Dữ liệu)
+# 1.9 Data Management and Storage Subsystem (Hệ thống Quản lý và Lưu trữ Dữ liệu)
 - Định nghĩa: Lớp này quản lý việc lưu trữ và truy xuất dữ liệu từ hệ thống trạm khí tượng.
 
 ## Thuộc tính:
