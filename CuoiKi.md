@@ -1,6 +1,6 @@
 # A wilderness weather station
-## 1.Thiết kế lớp
-# 1. Sensors(Cảm biến)
+# 1.Thiết kế lớp
+# 1.1 Sensors(Cảm biến)
 - Định nghĩa: Lớp này đại diện cho các cảm biến được sử dụng để đo các yếu tố khí tượng như nhiệt độ, độ ẩm, áp suất, gió.
 
 ## Thuộc tính:
@@ -15,7 +15,7 @@
 ## Hình ảnh mô tả lớp Sensors(Cảm biến):
 
 ![Diagram](https://www.planttext.com/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niK9mQbvnVb6nGZMN0WWKWxcUBbOAnIL5cNdfoA8XbGMfgE9bYJcbgLOAQJdvYILGbIM99QN5gAgIytDoKfDBN19B4ZKqhHJAyZDJe18PgSdPmM0Tg195gSMf9N2XMYuk00000F__0m00)
-# 2. DataProcessor (Xử lý Dữ liệu)
+# 1.2 DataProcessor (Xử lý Dữ liệu)
 - Định nghĩa: Lớp này xử lý dữ liệu từ các cảm biến để tính toán các giá trị khí tượng như nhiệt độ trung bình, độ ẩm, v.v.
 
 ## Thuộc tính:
@@ -32,7 +32,7 @@
 
 
 
-# 3.FaultDetector (Phát hiện Lỗi)
+# 1.3 FaultDetector (Phát hiện Lỗi)
 - Định nghĩa: Lớp này phát hiện các lỗi trong các cảm biến hoặc trong dữ liệu thu thập được.
 
 ## Thuộc tính:
@@ -48,7 +48,7 @@
 ## Hình ảnh mô tả lớp FaultDetector (Phát hiện Lỗi):
 
 ![Diagram](https://www.planttext.com/plantuml/png/N8mn3i8m40Hxl-9A-88h2a95nmki-70i7Jdfzao3U1a5J-8BA35Ds79cDP_N-m1FvkqcOPG4q2aryICxZwv6Zq3Bs4pjh2MIL7XdFXbZKicHhgBfHy4pr2wUl24ItEfSkibhSytlzf7kMdCNecLO-bjg3FvxFqFu0W00__y30000)
-# 4. PowerManager (Quản lý Nguồn)
+# 1.4 PowerManager (Quản lý Nguồn)
 - Định nghĩa: Lớp này quản lý nguồn năng lượng của trạm khí tượng, bao gồm việc giám sát mức pin và tiết kiệm năng lượng.
 
 ## Thuộc tính:
@@ -64,7 +64,7 @@
 ## Hình ảnh mô tả lớp PowerManager (Quản lý Nguồn)
 
 ![Diagram](https://www.planttext.com/plantuml/png/L8v12i8m44NtFSKizGfPYUiAWdg0CHtJG9gHcMc3Y2TpuP6yWjI0sBzz3_vxFryRDHGRXzJuXAgmvqAomuo11EuDp3kZ6ScjfOcIWqjYj0gkitmmj54Tg4dCuG-S50Cj_85pD9RlnshjOEBOLQ8bck-Ft7Af1TpHql0zIg1jJVcXH_C1003__mC0)
-# 5. TempStorage (Lưu trữ Tạm thời)
+# 1.55 TempStorage (Lưu trữ Tạm thời)
 - Định nghĩa: Lớp này lưu trữ dữ liệu tạm thời trong quá trình xử lý trước khi đưa vào hệ thống lưu trữ chính.
 
 ## Thuộc tính:
@@ -80,7 +80,7 @@
 ## Hình ảnh mô tả lớp TempStorage (Lưu trữ Tạm thời)
 
 ![Diagram](https://www.planttext.com/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niK98Qcv1S4b-KM9wga8rbm88bAJc5hWabYHQAQHa9fT0n8eXIfmJ2nAJCqighHJISl8JeNAbnQafK2DGn45wKa46QMXQAPJbPwP0X8jIIueoKykmo2Jdf2OMGKs2ozHo0G000F__0m00)
-# 6. SatelliteComm (Giao tiếp Vệ tinh)
+# 1.6 SatelliteComm (Giao tiếp Vệ tinh)
 - Định nghĩa: Lớp này cung cấp các phương thức để giao tiếp với vệ tinh, gửi và nhận dữ liệu.
 
 ## Thuộc tính:
@@ -96,7 +96,7 @@
 ## Hình ảnh mô tả lớp SatelliteComm (Giao tiếp Vệ tinh)
 
 ![Diagram](https://www.planttext.com/plantuml/png/PCqn3i8m30NGFQVm25V8X4GNvfx0f2QrS6mfCLqG9sFWI5oXggYe17_yJr___NmTccFrMv6G15k37fr4sEbefS0zm9AsbQgKd4qZdCraPSwAqdibpJv6k8YX_onFNOJcbJMlG3fqwBZRHvYCXqzRAH5Fz0zff7JTth_u23C0003__mC0)
-# 7. CentralSystem (Hệ thống Trung tâm)
+# 1.7 CentralSystem (Hệ thống Trung tâm)
 - Định nghĩa: Lớp này là trung tâm điều phối toàn bộ hoạt động của trạm khí tượng, bao gồm việc giám sát các cảm biến, xử lý dữ liệu và cảnh báo.
 
 ## Thuộc tính:
@@ -112,7 +112,7 @@
 ## Hình ảnh mô tả lớp CentralSystem (Hệ thống Trung tâm)
 
 ![Diagram](https://www.planttext.com/plantuml/png/LCmn2W8n58JXFgT8gLT8fMYvdITuR1vB89idRsO54KzciKVo2Y8HqIc_7-RvM7UWE9UvXh4A40_Qw59FLr3dU0lnFL2u84NGIvi-fWtcGm5Jh0NiceKosFHBixL2y_wusQPuiP9xEhkD2Xo5yX-WBU-hEhzy3oy0003__mC0)
-# 8. WeatherStation (Trạm Khí tượng)
+# 1.8 WeatherStation (Trạm Khí tượng)
 - Định nghĩa: Lớp này đại diện cho một trạm khí tượng, chịu trách nhiệm thu thập và gửi dữ liệu khí tượng.
 
 ## Thuộc tính:
@@ -128,7 +128,7 @@
 ## Hình ảnh mô tả lớp WeatherStation (Trạm Khí tượng)
 
 ![Diagram](https://www.planttext.com/plantuml/png/R8sn3K8n34JxJE4ILaX5mGOKr5PYWIN_H8hlWm0n6SKVYHLG2CsNS7VlpdVlrx9pSCCyMKZ6xdGKnbdQ0GojXHw1-bbDNnt9qRIS1hsEx9x1aR8c3EmtXqozOVRrWnQ5ikbTDjj8bwfvy5JD9E6ttVlMlal9_ynd-0000F__0m00)
-# 9. Data Management and Storage Subsystem (Hệ thống Quản lý và Lưu trữ Dữ liệu)
+# 1.99 Data Management and Storage Subsystem (Hệ thống Quản lý và Lưu trữ Dữ liệu)
 - Định nghĩa: Lớp này quản lý việc lưu trữ và truy xuất dữ liệu từ hệ thống trạm khí tượng.
 
 ## Thuộc tính:
@@ -144,7 +144,7 @@
 ## Hình ảnh mô tả lớp Data Management and Storage Subsystem (Hệ thống Quản lý và Lưu trữ Dữ liệu)
 
 ![Diagram](https://www.planttext.com/plantuml/png/R8qn2W8n44NxFSMKUeLKWfRQw0a-oHW2oSwI6HU2xCaiF99NaB3R2FxoFNZ_yteVr53jKVBWCrJf1CC58o8N7ktMrBZGSw0-DQc8VCG4dwmvkcU1hIx0SEL9D9dKvYWalnbupwfdYOvoqWts5FUltTxHB2cikBBLnFCV4pYp_V9b-0800F__0m00)
-# 10. DataProcessingUnit (Đơn vị Xử lý Dữ liệu)
+# 1.10 DataProcessingUnit (Đơn vị Xử lý Dữ liệu)
 - Định nghĩa: Lớp này chịu trách nhiệm xử lý dữ liệu khí tượng thu thập từ các cảm biến, bao gồm việc phân tích và tính toán các chỉ số khí tượng.
 
 ## Thuộc tính:
@@ -160,7 +160,7 @@
 ## Hình ảnh mô tả lớp DataProcessingUnit (Đơn vị Xử lý Dữ liệu)
 
 ![Diagram](https://www.planttext.com/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO9BOabYG55-ScfnSMPUUcXUPeb2DPS221H0HFEBWWjIKrEi5D9oyXDB858fYIM9WQMffQbM2ZcPnL11gFhClFIGpDnK5FLGAP1T6ffM2cNvcIaGYKAG8PZ2oJcfYKLW2-3YjLm00000__y30000)
-# 11. DataInterface (Giao diện Dữ liệu)
+# 1.1111 DataInterface (Giao diện Dữ liệu)
 - Định nghĩa: Lớp này cung cấp giao diện giữa người dùng và hệ thống, cho phép người dùng truy cập và xem dữ liệu khí tượng.
 
 ## Thuộc tính:
@@ -176,7 +176,7 @@
 ## Hình ảnh mô tả lớp DataInterface (Giao diện Dữ liệu)
 
 ![Diagram](https://www.planttext.com/plantuml/png/L8qn2W8n44Nxd2AbNY6LXOsTi7k1CHbb89bPCXCXo9xCmYDv1LaMY_poFzx_t_Vdf0RLMiakPb3rPp2ui66zGqJ_SduB_OkvBnYyMYL-x2WACqOZuSd0cWP_4yaxQuhrYhMGAWdhA2RI9KFV_Wx7u9z2QLYSPUfgM4Qeo6bGLlS3003__mC0)
-# 12. MaintenanceSystem (Hệ thống Bảo trì)
+# 1.12 MaintenanceSystem (Hệ thống Bảo trì)
 - Định nghĩa: Lớp này giúp giám sát và quản lý các công việc bảo trì của hệ thống trạm khí tượng.
 
 ## Thuộc tính:
@@ -192,7 +192,7 @@
 ## Hình ảnh mô tả lớp MaintenanceSystem (Hệ thống Bảo trì)
 
 ![Diagram](https://www.planttext.com/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO9lOcPUIMfUObvoQd1bSKbgha8rbm88v28aVFBJhHHoCejBC6I2In9BIekj58fBYZBpqY7InSaPgIcbEQceeWMfHMdvHRb8rcbeMYcKvMUcGEHpyjDnoi5CnAQWbWi0003__mC0)
-# 13. WeatherStationSubsystem (Hệ thống Con Trạm Khí tượng)
+# 1.13 WeatherStationSubsystem (Hệ thống Con Trạm Khí tượng)
 - Định nghĩa: Lớp này đại diện cho các hệ thống con của trạm khí tượng, mỗi hệ thống con có thể bao gồm một số cảm biến hoặc thiết bị phụ trợ.
 
 ## Thuộc tính:
@@ -208,7 +208,7 @@
 ## Hình ảnh mô tả lớp WeatherStationSubsystem (Hệ thống Con Trạm Khí tượng)
 
 ![Diagram](https://www.planttext.com/plantuml/png/LCmn3i8m44JHFgTm2LTmHK59bu9wSLQmqiQMF6CaG9mi1KVY2WX2uodVIF-zl7QWLBRPX-G2XACABrf72gtaiPrm0tKEZo5y1yqezM1W36xWNobiY06ibi-hUKc_HA-MZIPkTzriOxWMcrPFnLqJzqBf3sYUEdqE7m000F__0m00)
-# 14. SatelliteCommunicationModule (Mô-đun Giao tiếp Vệ tinh)
+# 1.14 SatelliteCommunicationModule (Mô-đun Giao tiếp Vệ tinh)
 - Định nghĩa: Lớp này quản lý giao tiếp giữa trạm khí tượng và vệ tinh.
 
 ## Thuộc tính:
@@ -224,7 +224,7 @@
 ## Hình ảnh mô tả lớp SatelliteCommunicationModule (Mô-đun Giao tiếp Vệ tinh)
 
 ![Diagram](https://www.planttext.com/plantuml/png/L8mn3i8m40Hxly8bV24L4caegFA2atsOaovtahrEWtWP1K_Y2mWH9BBbpkwy7iz30rNqMKDIQYrE15OLyD7dkPiaWhYTFNVbU0lna_RRdCOXDbIniW8fHZgXiXLSXtXH9tnH-jTD8FIs_IOtuuJTVeYBIrw5R7aaqBQjd5WMte1xU0C00F__0m00)
-# 15. CentralDataRepository (Kho Dữ liệu Trung tâm)
+# 1.15 CentralDataRepository (Kho Dữ liệu Trung tâm)
 - Định nghĩa: Lớp này chứa tất cả dữ liệu khí tượng đã được thu thập và xử lý.
 
 ## Thuộc tính:
@@ -240,7 +240,7 @@
 ## Hình ảnh mô tả lớp CentralDataRepository (Kho Dữ liệu Trung tâm)
 
 ![Diagram](https://www.planttext.com/plantuml/png/R8qz2e9130NxFKLAlS9MWXRMUeAGZHY8HfBuWOedi_18Na7MFqHyvGp3krskaqZqt6-qa684J7cRZZh3n0NlB2JD3t0gqESVifGZLrYfOJvLUmHatgA2Ihmm4d74NA97tw83xY-ZSON1fBqVqeM7FmQTrl8ZpkKE003__mC0)
-# 16. CommunicationSystem (Hệ thống Giao tiếp)
+# 1.16 CommunicationSystem (Hệ thống Giao tiếp)
 - Định nghĩa: Lớp này quản lý giao tiếp giữa các hệ thống trong trạm khí tượng và các hệ thống bên ngoài (như vệ tinh, máy chủ trung tâm).
 
 ## Thuộc tính:
@@ -256,7 +256,7 @@
 ## Hình ảnh mô tả lớp CommunicationSystem (Hệ thống Giao tiếp)
 
 ![Diagram](https://www.planttext.com/plantuml/png/LCp12K8n48JX-wjYZzf2Je9Me1MicrK2ILQoamSYLkR1acn1DAVCyVjXFg_tpi4DlUH5ChlJtahfDGaZMJtT7LheiT1lOhMg_1sCxe7EPdcqoE0ZGmDTiZ46tfh1n78WHqlrEjrije5MIt6WQuq71i_QL3IjEeNdyWK00F__0m00)
-# 17. Users (Người dùng)
+# 1.17 Users (Người dùng)
 - Định nghĩa: Lớp này đại diện cho người dùng của hệ thống, có thể là các nhà nghiên cứu, kỹ thuật viên hoặc quản trị viên.
 
 ## Thuộc tính:
